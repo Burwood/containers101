@@ -6,7 +6,7 @@
 <h2 id="containers-lab-agenda"><strong>Containers Lab Agenda</strong></h2>
 <ol>
 <li><a href="https://github.com/Burwood/containers101/blob/master/containers_lab/task_1.md">Search for images in a Public Registry</a></li>
-<li>Inspect Images in Public Docker Registry</li>
+<li><a href="https://github.com/Burwood/containers101/blob/master/containers_lab/task_2.md">Inspect Images in Public Docker Registry</a></li>
 <li>Pull down a python image</li>
 <li>Create a docker file</li>
 <li>Build a docker image</li>
