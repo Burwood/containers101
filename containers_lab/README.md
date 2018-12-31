@@ -1,9 +1,8 @@
 ---
-
-
+<h2 id="containers-lab-agenda"><strong>Containers Lab Agenda</strong></h2>
 ---
 
-<h2 id="containers-lab-agenda"><strong>Containers Lab Agenda</strong></h2>
+
 <ol>
 <li>Search for images in a Public Registry</li>
 <li>Inspect Images in Public Docker Registry</li>
