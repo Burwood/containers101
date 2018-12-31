@@ -10,7 +10,7 @@
 <li><a href="https://github.com/Burwood/containers101/blob/master/containers_lab/task_3.md">Pull down a python image</a></li>
 <li><a href="https://github.com/Burwood/containers101/blob/master/containers_lab/task_4.md">Create a docker file</a></li>
 <li><a href="https://github.com/Burwood/containers101/blob/master/containers_lab/task_5.md">Build a docker image</a></li>
-<li>Run a docker container with the new image</li>
+<li><a href="https://github.com/Burwood/containers101/blob/master/containers_lab/task_6.md">Run a docker container with the new image</a></li>
 <li>How do I leave a container running?</li>
 <li>How can I quit an interactive session and leave the container running?</li>
 <li>Attaching a volume to a container for persistent data</li>
