@@ -9,5 +9,5 @@
 Execute the command:    <code>docker search nodejs</code><br>
 now execute the command: <code>docker search node</code></p>
 <p>Notice the difference?</p>
-<p>Continue to the Next Task</p>
+<p><a href="https://github.com/Burwood/containers101/blob/master/containers_lab/task_2.md">Continue to the Next Task</a></p>
 
