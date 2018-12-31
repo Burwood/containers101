@@ -4,7 +4,7 @@
 ---
 
 <h2 id="create-a-dockerfile">Create a Dockerfile</h2>
-<p>The <strong>Dockerfile</strong> is what the docker engine requires to build new images and is essentially written in a do this, then that recipe style.</p>
+<p>The <strong>Dockerfile</strong> is what the docker engine requires to build new images and is essentially written in a do this, then that recipe style. Let’s build a sample app!</p>
 <ol>
 <li>
 <p>Clone the repo:  <code>https://github.com/Burwood/python-http.git</code></p>
