@@ -8,7 +8,7 @@
 <li><a href="https://github.com/Burwood/containers101/blob/master/containers_lab/task_1.md">Search for images in a Public Registry</a></li>
 <li><a href="https://github.com/Burwood/containers101/blob/master/containers_lab/task_2.md">Inspect Images in Public Docker Registry</a></li>
 <li><a href="https://github.com/Burwood/containers101/blob/master/containers_lab/task_3.md">Pull down a python image</a></li>
-<li>Create a docker file</li>
+<li><a href="https://github.com/Burwood/containers101/blob/master/containers_lab/task_4.md">Create a docker file</a></li>
 <li>Build a docker image</li>
 <li>Run a docker container with the new image</li>
 <li>How do I leave a container running?</li>
