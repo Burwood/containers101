@@ -1,7 +1,7 @@
 ---
-<h2 id="containers-lab-agenda"><strong>Containers Lab Agenda</strong></h2>
 
 ---
+<h2 id="containers-lab-agenda"><strong>Containers Lab Agenda</strong></h2>
 
 
 <ol>
