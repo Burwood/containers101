@@ -7,7 +7,7 @@
 <p>The <strong>Dockerfile</strong> is what the docker engine requires to build new images and is essentially written in a do this, then that recipe style. Let’s build a sample app!</p>
 <ol>
 <li>
-<p>Clone the repo:  <code>https://github.com/Burwood/python-http.git</code></p>
+<p>Clone the repo:  <strong><code>https://github.com/Burwood/python-http.git</code></strong></p>
 </li>
 <li>
 <p>In the newly created directory, create a file named <strong>Dockerfile</strong> with the below contents and fill in your name.</p>
