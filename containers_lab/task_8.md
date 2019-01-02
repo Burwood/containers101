@@ -25,22 +25,21 @@
 Notice that your uploaded file is gone? press <strong>ctrl+c</strong> once more.</p>
 </li>
 <li>
-<p>This time lets add a volume mount so we can make the data persistent. Run the below command:<br>
-<code>docker run -it -p 9000:9000 --name minio1 -v '/mnt/data':'/data' -v '/mnt/config':'/root/.minio' minio/minio server /data</code></p>
-</li>
-<li>
-<p>Open your browser again to <a href="http://localhost:9000">http://localhost:9000</a> and enter the AccessKey and SecretKey provided from the command line when you launched the container</p>
-</li>
-<li>
-<p>Press the Red Plus button and then create a bucket again named <strong>“test”</strong> and upload a test file.<img src="https://github.com/Burwood/containers101/raw/master/containers_lab/images/minio_create.png" alt="enter image description here"></p>
-</li>
-<li>
-<p>Now in the terminal, press <strong>ctrl+c</strong> to kill the container and run <code>docker rm minio1</code> to delete the container instance.</p>
-</li>
-<li>
-<p>Run the command:<br>
-<code>docker run -it -p 9000:9000 --name minio1 -v '/mnt/data':'/data' -v '/mnt/config':'/root/.minio' minio/minio server /data</code>  and browse to the site again. Note that your files are still there!<br>
-<img src="https://github.com/Burwood/containers101/raw/master/containers_lab/images/minio_show_files.png" alt="enter image description here"></p>
+<p>This time lets add a volume mount so we can make the data persistent. Run the below commands:</p>
 </li>
 </ol>
+<ul>
+<li><code>docker volume create minio-data &amp;&amp; docker volume create minio-config</code></li>
+<li><code>docker run -it -p 9000:9000 --name minio1 -v minio-data:/data -v minio-config:/root/.minio minio/minio server /data</code></li>
+</ul>
+<ol start="7">
+<li>Open your browser again to <a href="http://localhost:9000">http://localhost:9000</a> and enter the AccessKey and SecretKey provided from the command line when you launched the container</li>
+<li>Press the Red Plus button and then create a bucket again named <strong>“test”</strong> and upload a test file.<img src="https://github.com/Burwood/containers101/raw/master/containers_lab/images/minio_create.png" alt="enter image description here"></li>
+<li>Now in the terminal, press <strong>ctrl+c</strong> to kill the container and run <code>docker rm minio1</code> to delete the container instance.</li>
+<li>Run the command:<br>
+<code>docker run -it -p 9000:9000 --name minio1 -v minio-data:/data -v minio-config:/root/.minio minio/minio server /data</code>  and browse to the site again. Note that your files are still there!<br>
+<img src="https://github.com/Burwood/containers101/raw/master/containers_lab/images/minio_show_files.png" alt="enter image description here"></li>
+<li>Once again, press <strong>ctrl+c</strong> to kill the container and run <code>docker rm minio1</code> to delete the container instance and <code>docker volume prune</code> to clean up your volumes.</li>
+</ol>
+<p><a href="https://github.com/Burwood/containers101/blob/master/containers_lab/task_9.md">Continue to the Next Task</a></p>
 
