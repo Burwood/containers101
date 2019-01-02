@@ -3,8 +3,6 @@
 
 ---
 
-<hr>
-<hr>
 <h2 id="attaching-a-volume-to-a-container-for-persistent-data">Attaching a volume to a container for persistent data</h2>
 <p>While containers were originally designed for stateless applications where data was stored in a object based  system,  the community quickly realized that there were many legacy apps begging to be modernized and local storage was required. Out of this need volume mounts were created. Let’s use an off the shelf Cloud Storage application and attach a volume to it.</p>
 <ol>
