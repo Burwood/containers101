@@ -2,8 +2,9 @@
 One of the beauties of containers is that you can layer on your ideas atop others existing work so you don't have to reinvent the wheel.
 
 Let's have a look at the default Docker Hub repository and find an image to build on
-Execute the command:    **`docker search nodejs`**
-now execute the command: **`docker search node`**
+
+ 1. Execute the command:    **`docker search nodejs`** 
+ 2. Now execute the command: **`docker search node`**
 
 Notice the difference?
 
