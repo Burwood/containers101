@@ -1,9 +1,4 @@
----
-
-
----
-
-<h2 id="attaching-a-volume-to-a-container-for-persistent-data">Attaching a volume to a container for persistent data</h2>
+## Attaching a volume to a container for persistent data
 <p>While containers were originally designed for stateless applications where data was stored in a object based  system,  the community quickly realized that there were many legacy apps begging to be modernized and local storage was required. Out of this need volume mounts were created. Let’s use an off the shelf Cloud Storage application and attach a volume to it.</p>
 <ol>
 <li>
@@ -40,4 +35,3 @@ Notice that your uploaded file is gone? press <strong>ctrl+c</strong> once more.
 <li><p>Once again, press <strong>ctrl+c</strong> to kill the container and run <code>docker rm minio1</code> to delete the container instance and <code>docker volume prune</code> to clean up your volumes.</p></li>
 </ol>
 <p><a href="https://github.com/Burwood/containers101/blob/master/containers_lab/task_9.md">Continue to the Next Task</a></p>
-
