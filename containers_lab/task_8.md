@@ -51,8 +51,8 @@ to it.
     there\!   ![enter image description
     here](https://github.com/Burwood/containers101/raw/master/containers_lab/images/minio_show_files.png)
 11. Once again, let's clean up our mess
-	1. press **ctrl+c** to kill the container
-	2. run **```docker
+	1. Press **ctrl+c** to kill the container
+	2. Run **```docker
     rm minio1```** to delete the container instance 
     3. Lastly, let's use a new command **```docker volume
     prune```** to clean up our volumes
