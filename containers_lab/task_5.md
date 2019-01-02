@@ -6,9 +6,10 @@ After you've created your Dockerfile, you need to compile the image.
  3. When it's done, you can execute the command `docker images` and see the newly created image. (Note its size!)
  4. Go back and edit your **Dockerfile**, change it to match below:
 
-   ` FROM alpine:latest
-   LABEL maintainer="James Anderton <janderton@burwood.com>"
-   LABEL description="Demo Python App"
+```
+FROM alpine:latest
+LABEL maintainer="James Anderton <janderton@burwood.com>"
+LABEL description="Demo Python App"
 COPY ["requirements.txt", "."]
 
 RUN apk --update add --no-cache python3 py3-pip \
@@ -23,8 +24,8 @@ WORKDIR /app
 COPY ["src/", "/app/"]
 
 ENTRYPOINT ["python"]
-CMD ["app.py"]`
-
+CMD ["app.py"]
+```
  5. Run the same build command,  and then run `docker image ls` again and note the difference in size.
 
 **It pays to know the source of your container images and often times you'll end up making your own due to size or package constraints.**

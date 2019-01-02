@@ -1,32 +1,24 @@
----
 
+## Create a Dockerfile
 
----
+The **Dockerfile** is what the docker engine requires to build new images and is essentially written in a do this, then that recipe style. Let's build a sample app!
 
-<h2 id="create-a-dockerfile">Create a Dockerfile</h2>
-<p>The <strong>Dockerfile</strong> is what the docker engine requires to build new images and is essentially written in a do this, then that recipe style. Let’s build a sample app!</p>
-<ol>
-<li>
-<p>Clone the repo:  <strong><code>https://github.com/Burwood/python-http.git</code></strong></p>
-</li>
-<li>
-<p>In the newly created directory, create a file named <strong>Dockerfile</strong> with the below contents and fill in your name.</p>
-<pre><code>FROM python:3-stretch
+ 1. Clone the repo:  **`https://github.com/Burwood/python-http.git`**
+ 2. In the newly created directory, create a file named **Dockerfile** with the below contents and fill in your name.
+ 
+		FROM python:3-stretch
 
-LABEL maintainer="James Anderton &lt;janderton@burwood.com&gt;"
-LABEL description="Demo Python App"
+		LABEL maintainer="James Anderton <janderton@burwood.com>"
+		LABEL description="Demo Python App"
 
-WORKDIR /app
+		WORKDIR /app
 
-COPY ["src/", "/app/"]
+		COPY ["src/", "/app/"]
 
-ENV PORT 8080
-EXPOSE 8080
+		ENV PORT 8080
+		EXPOSE 8080
 
-ENTRYPOINT ["python"]
-CMD ["app.py"]
-</code></pre>
-</li>
-</ol>
-<p><a href="https://github.com/Burwood/containers101/blob/master/containers_lab/task_5.md">Continue to the Next Task</a></p>
+		ENTRYPOINT ["python"]
+		CMD ["app.py"]
 
+[Continue to the Next Task](https://github.com/Burwood/containers101/blob/master/containers_lab/task_5.md)
