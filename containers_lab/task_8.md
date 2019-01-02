@@ -1,46 +1,57 @@
----
+## 
+Attaching a volume to a container for persistent data
 
+While containers were originally designed for stateless applications
+where data was stored in a object based system, the community quickly
+realized that there were many legacy apps begging to be modernized and
+local storage was required. Out of this need volume mounts were created.
+Let’s use an off the shelf Cloud Storage application and attach a volume
+to it.
 
----
+ 1. Run the following commands:   **`docker pull minio/minio`   `docker
+    run -it -p 9000:9000 minio/minio server /data`**
+2. Open your browser to <http://localhost:9000> and enter the AccessKey
+    and SecretKey provided from the commandline when you launched the
+    container
+3. Press the **Red +** button at the bottom right corner and then press
+    the **Create Bucket** button to create a bucket named **“test”**. (The
+    icon is the second yellow one)![enter image description
+    here](https://github.com/Burwood/containers101/raw/master/containers_lab/images/minio_create.png)
+    
+4. Next press the Upload file button right above that and upload a test
+    file.![enter image description
+    here](https://github.com/Burwood/containers101/raw/master/containers_lab/images/minio_show_files.png)
+    
+5. Now in the terminal, press **ctrl+c** to kill the container and run
+    **`docker run -it -p 9000:9000 minio/minio server /data`** to create a
+    new one.   Notice that your uploaded file is gone? press **ctrl+c**
+    once more.
+    
+6. This time lets add a volume mount so we can make the data
+    persistent. Run the below commands:
+    
+      - **`docker volume create minio-data && docker volume create
+        minio-config`**
+      - **`docker run -it -p 9000:9000 --name minio1 -v minio-data:/data -v
+        minio-config:/root/.minio minio/minio server /data`**
+    
+7. Open your browser again to <http://localhost:9000> and enter the
+    AccessKey and SecretKey provided from the command line when you
+    launched the container
+    
+8. Press the **Red +** button and then create a bucket again named
+    **“test”** and upload a test file.![enter image description here](https://github.com/Burwood/containers101/raw/master/containers_lab/images/minio_create.png)
+    
+9. Now in the terminal, press **ctrl+c** to kill the container and run
+    **`docker rm minio1`** to delete the container instance.
+    
+10. Run the command:   **`docker run -it -p 9000:9000 --name minio1 -v
+    minio-data:/data -v minio-config:/root/.minio minio/minio server
+    /data`** and browse to the site again. Note that your files are still
+    there\!   ![enter image description
+    here](https://github.com/Burwood/containers101/raw/master/containers_lab/images/minio_show_files.png)
+11. Once again, press **ctrl+c** to kill the container and run **```docker
+    rm minio1```** to delete the container instance and **```docker volume
+    prune```** to clean up your volumes.
 
-<h2 id="attaching-a-volume-to-a-container-for-persistent-data">Attaching a volume to a container for persistent data</h2>
-<p>While containers were originally designed for stateless applications where data was stored in a object based  system,  the community quickly realized that there were many legacy apps begging to be modernized and local storage was required. Out of this need volume mounts were created. Let’s use an off the shelf Cloud Storage application and attach a volume to it.</p>
-<ol>
-<li>
-<p>Run the following commands:<br>
-<code>docker pull minio/minio</code><br>
-<code>docker run -it -p 9000:9000 minio/minio server /data</code></p>
-</li>
-<li>
-<p>Open your browser to <a href="http://localhost:9000">http://localhost:9000</a> and enter the AccessKey and SecretKey provided from the commandline when you launched the container</p>
-</li>
-<li>
-<p>Press the Red Plus button at the bottom right corner and then press the Create Bucket button to create a bucket named <strong>“test”</strong>. (The icon is the second yellow one)<img src="https://github.com/Burwood/containers101/raw/master/containers_lab/images/minio_create.png" alt="enter image description here"></p>
-</li>
-<li>
-<p>Next press the Upload file button right above that and upload a test file.<img src="https://github.com/Burwood/containers101/raw/master/containers_lab/images/minio_show_files.png" alt="enter image description here"></p>
-</li>
-<li>
-<p>Now in the terminal, press <strong>ctrl+c</strong> to kill the container and run <code>docker run -it -p 9000:9000 minio/minio server /data</code> to create a new one.<br>
-Notice that your uploaded file is gone? press <strong>ctrl+c</strong> once more.</p>
-</li>
-<li>
-<p>This time lets add a volume mount so we can make the data persistent. Run the below command:<br>
-<code>docker run -it -p 9000:9000 --name minio1 -v '/mnt/data':'/data' -v '/mnt/config':'/root/.minio' minio/minio server /data</code></p>
-</li>
-<li>
-<p>Open your browser again to <a href="http://localhost:9000">http://localhost:9000</a> and enter the AccessKey and SecretKey provided from the command line when you launched the container</p>
-</li>
-<li>
-<p>Press the Red Plus button and then create a bucket again named <strong>“test”</strong> and upload a test file.<img src="https://github.com/Burwood/containers101/raw/master/containers_lab/images/minio_create.png" alt="enter image description here"></p>
-</li>
-<li>
-<p>Now in the terminal, press <strong>ctrl+c</strong> to kill the container and run <code>docker rm minio1</code> to delete the container instance.</p>
-</li>
-<li>
-<p>Run the command:<br>
-<code>docker run -it -p 9000:9000 --name minio1 -v '/mnt/data':'/data' -v '/mnt/config':'/root/.minio' minio/minio server /data</code>  and browse to the site again. Note that your files are still there!<br>
-<img src="https://github.com/Burwood/containers101/raw/master/containers_lab/images/minio_show_files.png" alt="enter image description here"></p>
-</li>
-</ol>
-
+[Continue to the Next Task](https://github.com/Burwood/containers101/blob/master/containers_lab/task_9.md)

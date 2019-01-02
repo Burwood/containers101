@@ -1,22 +1,16 @@
----
+## **Containers Lab Agenda**
 
-
----
-
-<h2 id="containers-lab-agenda"><strong>Containers Lab Agenda</strong></h2>
-<ol>
-<li><a href="https://github.com/Burwood/containers101/blob/master/containers_lab/task_1.md">Search for images in a Public Registry</a></li>
-<li><a href="https://github.com/Burwood/containers101/blob/master/containers_lab/task_2.md">Inspect Images in Public Docker Registry</a></li>
-<li><a href="https://github.com/Burwood/containers101/blob/master/containers_lab/task_3.md">Pull down a python image</a></li>
-<li><a href="https://github.com/Burwood/containers101/blob/master/containers_lab/task_4.md">Create a docker file</a></li>
-<li><a href="https://github.com/Burwood/containers101/blob/master/containers_lab/task_5.md">Build a docker image</a></li>
-<li><a href="https://github.com/Burwood/containers101/blob/master/containers_lab/task_6.md">Run a docker container with the new image</a></li>
-<li><a href="https://github.com/Burwood/containers101/blob/master/containers_lab/task_7.md">How do I leave a container running?</a></li>
-<li><a href="https://github.com/Burwood/containers101/blob/master/containers_lab/task_8.md">Attaching a volume to a container for persistent data</a></li>
-<li>How do I put files into the image and save it for next time?</li>
-<li>How do I modify something in a running container?</li>
-<li>Container as Code vs Artisanal crafted containers</li>
-<li>Tagging and pushing a container to the registry</li>
-<li>Cleaning up old images and containers</li>
-</ol>
+ 1. [Search for images in a Public Registry](https://github.com/Burwood/containers101/blob/master/containers_lab/task_1.md)
+ 2. [Inspect Images in Public Docker Registry](https://github.com/Burwood/containers101/blob/master/containers_lab/task_2.md)
+ 3. [Pull down a python image](https://github.com/Burwood/containers101/blob/master/containers_lab/task_3.md)
+ 4. [Create a docker file](https://github.com/Burwood/containers101/blob/master/containers_lab/task_4.md)
+ 5. [Build a docker image](https://github.com/Burwood/containers101/blob/master/containers_lab/task_5.md)
+ 6. [Run a docker container with the new image](https://github.com/Burwood/containers101/blob/master/containers_lab/task_6.md)
+ 7. [How do I leave a container running?](https://github.com/Burwood/containers101/blob/master/containers_lab/task_7.md)
+ 8. [Attaching a volume to a container for persistent data](https://github.com/Burwood/containers101/blob/master/containers_lab/task_8.md)
+ 9.  [How do I modify a file in a running container?](https://github.com/Burwood/containers101/blob/master/containers_lab/task_9.md)
+ 10. Container as Code vs Artisanal crafted containers
+ 11. How do I change things in the image and save it for next time?
+ 12.  Tagging and pushing a container to the registry
+ 13.  Cleaning up old images and containers
 
