@@ -1,21 +1,14 @@
----
+## Build a docker image
+After you've created your Dockerfile, you need to compile the image.
 
+ 1. Execute the command: `docker build -t python-http-demo:latest .`
+ 2. You will see it pull down the python container if you don't already have it locally, then it will walk through your build steps one by one creating new layers
+ 3. When it's done, you can execute the command `docker images` and see the newly created image. (Note its size!)
+ 4. Go back and edit your **Dockerfile**, change it to match below:
 
----
-
-<h2 id="build-a-docker-image">Build a docker image</h2>
-<p>After you’ve created your Dockerfile, you need to compile the image.</p>
-<ol>
-<li>Execute the command: <strong><code>docker build -t python-http-demo:latest .</code></strong></li>
-<li>You will see it pull down the python container if you don’t already have it locally, then it will walk through your build steps one by one creating new layers</li>
-<li>When it’s done, you can execute the command <strong><code>docker images</code></strong> and see the newly created image. (Note its size!)</li>
-<li>Go back and edit your <strong>Dockerfile</strong>, change it to match below:</li>
-</ol>
-<strong><pre><code>FROM alpine:latest
-
-LABEL maintainer="James Anderton <janderton@burwood.com>"
-LABEL description="Demo Python App"
-
+   ` FROM alpine:latest
+   LABEL maintainer="James Anderton <janderton@burwood.com>"
+   LABEL description="Demo Python App"
 COPY ["requirements.txt", "."]
 
 RUN apk --update add --no-cache python3 py3-pip \
@@ -29,11 +22,11 @@ EXPOSE 8080
 WORKDIR /app
 COPY ["src/", "/app/"]
 
-ENTRYPOINT ["python3"]
-CMD ["app.py"]</code></pre></strong>
-<ol start="5">
-<li>Run the same build command,  and then run <strong><code>docker image ls</code></strong> again and note the difference in size.</li>
-</ol>
-<p><strong>It pays to know the source of your container images and often times you’ll end up making your own due to size or package constraints.</strong></p>
-<p><a href="https://github.com/Burwood/containers101/blob/master/containers_lab/task_6.md">Continue to the Next Task</a></p>
+ENTRYPOINT ["python"]
+CMD ["app.py"]`
 
+ 5. Run the same build command,  and then run `docker image ls` again and note the difference in size.
+
+**It pays to know the source of your container images and often times you'll end up making your own due to size or package constraints.**
+
+[Continue to the Next Task](https://github.com/Burwood/containers101/blob/master/containers_lab/task_6.md)
