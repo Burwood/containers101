@@ -1,13 +1,10 @@
----
+## Search for Images
+One of the beauties of containers is that you can layer on your ideas atop others existing work so you don't have to reinvent the wheel.
 
+Let's have a look at the default Docker Hub repository and find an image to build on
+Execute the command:    **`docker search nodejs`**
+now execute the command: **`docker search node`**
 
----
+Notice the difference?
 
-<h2 id="search-for-images">Search for Images</h2>
-<p>One of the beauties of containers is that you can layer on your ideas atop others existing work so you don’t have to reinvent the wheel.</p>
-<p>Let’s have a look at the default Docker Hub repository and find an image to build on<br>
-Execute the command:    <strong><code>docker search nodejs</code></strong><br>
-now execute the command: <strong><code>docker search node</code></strong></p>
-<p>Notice the difference?</p>
-<p><a href="https://github.com/Burwood/containers101/blob/master/containers_lab/task_2.md">Continue to the Next Task</a></p>
-
+[Continue to the Next Task](https://github.com/Burwood/containers101/blob/master/containers_lab/task_2.md)
