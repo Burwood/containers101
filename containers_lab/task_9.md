@@ -11,4 +11,5 @@ While in production, containers are intended to be immutable and should only be 
  
  4. Once again, press **ctrl+c** to kill the container and run **```docker
     rm python-demo```** to delete the container instance 
+    
 [Continue to the Next Task](https://github.com/Burwood/containers101/blob/master/containers_lab/task_10.md)
