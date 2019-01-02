@@ -3,7 +3,7 @@ After running your first container you were probably left wondering... how is th
 
  1. Execute the following command to run it as a detached container:
  **`docker run -d  --name python-demo -p 8080:8080 python-http-demo`**
- 2. This will drop you back to a prompt, so execute `docker ps` to see your running container
+ 2. This will drop you back to a prompt, so execute **`docker ps`** to see your running container
  3. Clean up your instance of this docker image with the command: 
  **`docker stop python-demo && docker rm python-demo`** so that we can reuse that name again later
  
