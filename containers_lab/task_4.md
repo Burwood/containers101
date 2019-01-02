@@ -1,7 +1,7 @@
 
 ## Create a Dockerfile
 
-The **Dockerfile** is what the docker engine requires to build new images and is essentially written in a 'do this, then that recipe style. Let's build a sample app!
+The **Dockerfile** is what the docker engine requires to build new images and is essentially written in a *do this, then that* recipe style. Let's build a sample app!
 
  1. Clone the repo:  **`https://github.com/Burwood/python-http.git`**
  2. In the newly created directory, create a file named **Dockerfile** with the below contents and fill in your name.
@@ -23,5 +23,5 @@ The **Dockerfile** is what the docker engine requires to build new images and is
 
 [Continue to the Next Task](https://github.com/Burwood/containers101/blob/master/containers_lab/task_5.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3MDk3MDA5N119
+eyJoaXN0b3J5IjpbMTcxODMxNzIxNF19
 -->
