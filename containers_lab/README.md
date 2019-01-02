@@ -9,8 +9,6 @@
  7. [How do I leave a container running?](https://github.com/Burwood/containers101/blob/master/containers_lab/task_7.md)
  8. [Attaching a volume to a container for persistent data](https://github.com/Burwood/containers101/blob/master/containers_lab/task_8.md)
  9.  [How do I modify a file in a running container?](https://github.com/Burwood/containers101/blob/master/containers_lab/task_9.md)
- 10. Container as Code vs Artisanal crafted containers
- 11. How do I change things in the image and save it for next time?
- 12.  Tagging and pushing a container to the registry
- 13.  Cleaning up old images and containers
+ 10.  [Tagging and pushing a container to the registry](https://github.com/Burwood/containers101/blob/master/containers_lab/task_10.md)
+ 11.  [Cleaning up old images and containers](https://github.com/Burwood/containers101/blob/master/containers_lab/task_11.md)
 
