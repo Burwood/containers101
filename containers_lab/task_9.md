@@ -5,4 +5,7 @@ While in production, containers are intended to be immutable and should only be 
  2. Open a brower tab to **`http://localhost:8080`** and note the image
  3. From the [previously cloned git repo directory](https://github.com/Burwood/python-http), execute the command: **`docker cp src/duck.png python-demo:/app/logo.png`**
  
+ You should be rewarded with a picture of very useful debugging tool.
+ ![enter image description here](https://github.com/Burwood/containers101/raw/master/containers_lab/images/duck.png)
+ 
 [Continue to the Next Task](https://github.com/Burwood/containers101/blob/master/containers_lab/task_10.md)
