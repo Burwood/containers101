@@ -8,6 +8,6 @@ While in production, containers are intended to be immutable and should only be 
  ![enter image description here](https://github.com/Burwood/containers101/raw/master/containers_lab/images/duck.png)
  
  
- 4. Once again, stop and delete the container instance 
+ 5. Once again, stop and delete the container instance 
     
 [Continue to the Next Task](https://github.com/Burwood/containers101/blob/master/containers_lab/task_10.md)
