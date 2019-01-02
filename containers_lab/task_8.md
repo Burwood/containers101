@@ -50,8 +50,11 @@ to it.
     /data`** and browse to the site again. Note that your files are still
     there\!   ![enter image description
     here](https://github.com/Burwood/containers101/raw/master/containers_lab/images/minio_show_files.png)
-11. Once again, press **ctrl+c** to kill the container and run **```docker
-    rm minio1```** to delete the container instance and **```docker volume
-    prune```** to clean up your volumes.
+11. Once again, let's clean up our mess
+	11.1. press **ctrl+c** to kill the container
+	11.2. run **```docker
+    rm minio1```** to delete the container instance 
+    11.3. Lastly, let's use a new command **```docker volume
+    prune```** to clean up our volumes
 
 [Continue to the Next Task](https://github.com/Burwood/containers101/blob/master/containers_lab/task_9.md)
