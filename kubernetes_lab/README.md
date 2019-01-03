@@ -1,8 +1,8 @@
 ## **Kubernetes Lab Agenda**
 
  1. [Learning your tools](https://github.com/Burwood/containers101/blob/master/kubernetes_lab/task_1.md)
- 2. Deploy and manage a pod
- 3. Create labels, select pods to view by  labelsets, etc.
+ 2. [Deploy and manage a pod](https://github.com/Burwood/containers101/blob/master/kubernetes_lab/task_2.md)
+ 3. [Create labels, select pods to view by  labelsets, etc.](https://github.com/Burwood/containers101/blob/master/kubernetes_lab/task_3.md)
  4. Deploy an application via a Deployment
  5. Create an Ingress
  6. Expose a Deployment via a Service
