@@ -12,4 +12,4 @@
  10.  [Tagging and pushing a container to the registry](https://github.com/Burwood/containers101/blob/master/containers_lab/task_10.md)
  11.  [Cleaning up old images and containers](https://github.com/Burwood/containers101/blob/master/containers_lab/task_11.md)
 
-[Return to the Index](https://github.com/Burwood/containers101/blob/master/README.md)
+[Return to Lab Home](https://github.com/Burwood/containers101/blob/master/README.md)
