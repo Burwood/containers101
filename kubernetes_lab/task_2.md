@@ -20,3 +20,5 @@ Basic Commands (Intermediate):
 
   ```
 2. Kubeadm and Kubefed are two more tools that have recently come to general availability that help you to stand up and manage clusters if you are building stand-alone systems, but as we are focused on GKE it is outside the scope of this tutorial.
+
+[Continue to the Next Task](https://github.com/Burwood/containers101/blob/master/kubernetes_lab/task_3.md)
