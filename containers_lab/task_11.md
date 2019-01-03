@@ -5,7 +5,8 @@ So let's clean up the mess we made:
 
  1. First execute the command: **`docker container prune`**
  2. Next run: **`docker image prune`**
- 3. Now run: **`docker volume prune`**
- 4. Lastly, run **`docker volume prune -a`** and note the difference...
+ 4. Lastly, run **`docker image prune -a`** and note the difference...
+ 4. Now run: **`docker volume prune`**
+
 
 [Return to the Index](https://github.com/Burwood/containers101/blob/master/containers_lab/README.md)
