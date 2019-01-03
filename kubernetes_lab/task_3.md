@@ -25,4 +25,7 @@ ENTRYPOINT ["python3"]
 CMD ["app.py"]
 ```
 
+ 3. Go ahead a build the docker file and tag the image
+ 4. Now execute the command **`kubectl run app <IMAGE_NAME:TAG>`**
+
 [Continue to the Next Task](https://github.com/Burwood/containers101/blob/master/kubernetes_lab/task_4.md)
