@@ -1,5 +1,5 @@
 ## Learning your tools
-Being an Orchestrator of containers, there are various tools that you will use to manage Kubernetes. 
+Being an Orchestrator of Containers, there are various tools that you will use to manage Kubernetes. 
 
  1. The most basic one is Kubectl (pronounced Cube-Cuddle or Cube-Control...[yes this is a religious argument](https://www.reddit.com/r/kubernetes/comments/5qthoc/how_should_i_pronounce_kubectl/))
 Kubectl controls the Kubernetes cluster manager and our good friends at both Google and Docker have made life easier and included it in their SDK's now as well.
