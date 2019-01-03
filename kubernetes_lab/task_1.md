@@ -4,10 +4,8 @@ Being an Orchestrator of containers, there are various tools that you will use t
  1. The most basic one is Kubectl (pronounced Cube-Cuddle or Cube-Control...[yes this is a religious argument](https://www.reddit.com/r/kubernetes/comments/5qthoc/how_should_i_pronounce_kubectl/))
 Kubectl controls the Kubernetes cluster manager and our good friends at both Google and Docker have made life easier and included it in their SDK's now as well.
 
-   ```
-
 Find more information at: https://kubernetes.io/docs/reference/kubectl/overview/
-
+```
 Basic Commands (Beginner):
   create         Create a resource from a file or from stdin.
   expose         Take a replication controller, service, deployment or pod and expose it as a new Kubernetes Service
