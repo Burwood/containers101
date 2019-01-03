@@ -13,4 +13,4 @@
  11. Deploy the K8s Dashboard and use Kubectl proxy to view it
  12. Update the Deployment manifest and apply via Kubectl, watch it do a rolling upgrade
 
-[Return to the Index](https://github.com/Burwood/containers101/blob/master/README.md)
+[Return to Lab Home](https://github.com/Burwood/containers101/blob/master/README.md)
