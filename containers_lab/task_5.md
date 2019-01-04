@@ -23,7 +23,7 @@ EXPOSE 8080
 WORKDIR /app
 COPY ["src/", "/app/"]
 
-ENTRYPOINT ["python"]
+ENTRYPOINT ["python3"]
 CMD ["app.py"]
 ```
  5. Run the same build command,  and then run `docker image ls` again and note the difference in size.
