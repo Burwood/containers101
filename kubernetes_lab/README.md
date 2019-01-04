@@ -4,7 +4,7 @@
  2. [Learning your tools](https://github.com/Burwood/containers101/blob/master/kubernetes_lab/task_2.md)
  3. [Deploy and manage a pod](https://github.com/Burwood/containers101/blob/master/kubernetes_lab/task_3.md)
   4. [Deploy an application via a Deployment](https://github.com/Burwood/containers101/blob/master/kubernetes_lab/task_4.md)
- 5. [Create labels and select pods to view by label sets](https://github.com/Burwood/containers101/blob/master/kubernetes_lab/task_5.md)
+ 5. [Creating and using labels, selectors and annotations ](https://github.com/Burwood/containers101/blob/master/kubernetes_lab/task_5.md)
  6. Expose a Deployment via a Service
  7. Create an Ingress
  8. Create a new Namespace for a second application
