@@ -10,7 +10,7 @@
  8. Create a new Namespace for a second application
  9. Deploy a MongoDB instance as a StatefulSet
  10. Create a viewing-only RBAC role and bind it to a user
- 11. Deploy the K8s Dashboard and use Kubectl proxy to view it
+ 11. View workloads from the GKE Dashboard
  12. Update the Deployment manifest and apply via Kubectl, watch it do a rolling upgrade
 
 [Return to Lab Home](https://github.com/Burwood/containers101/blob/master/README.md)
