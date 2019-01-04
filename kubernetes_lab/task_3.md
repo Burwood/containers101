@@ -52,5 +52,7 @@ While the pod will only give you a session if the container started up correctly
     *You will notice, if you try to reach the python app from outside the cluster, it will not be available. You will need  a few more pieces to make it available and we will walk through those in the coming labs.*
 
 16. Run the command **`kubectl delete pod python-app`** to remove the pod we created.
+17. Using the **kubectl** command, do the same thing for the sleep-pod as well.
+
 
 [Continue to the Next Task](https://github.com/Burwood/containers101/blob/master/kubernetes_lab/task_4.md)
