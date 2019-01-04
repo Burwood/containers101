@@ -35,10 +35,11 @@ CMD ["app.py"]
 It is pretty much the same as what you get when you describe the pod, however, now you can trim the excess and reuse it as a template for other pods
 
 Let's use the [yaml file](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/assets/python-app-pod.yml)  I prepared and create a new pod:
+
 7. Copy the contents of the file and paste it into a new file in the Cloud Shell called **python-app-pod.yaml**
 8. Now create the new pod with the command: **`kubectl create -f python-app-pod.yaml`**
-9. Use the **`kubectl get pods`** command to see if your pod was created.
-10. Lets's verify your pod another way, run **`kubectl exec -it python-app /bin/sh`** to enter a shell session your pod and run the **`ls`** command.
+9. Use the **`kubectl get pods`** command to see if your pod was created
+10. Lets's verify your pod another way, run **`kubectl exec -it python-app /bin/sh`** to enter a shell session your pod and run the **`ls`** command
 ![enter image description here](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/images/kubectl_create_pod.png) 
 While the pod will only give you a session if the container started up correctly, this can be a valuable tool on many occasions when your pod half-way works.
 11. Type **`Exit`** to leave the pod shell session
