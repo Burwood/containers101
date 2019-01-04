@@ -13,8 +13,11 @@ When you get going, you may have a dozen or so pods in development, but when you
  9. Use the command **`kubectl label deployments python-app tier=frontend`** and **`kubectl label deployments python-app -prod tier=front-end`**  to create an tier label
  10. Next use the **`kubectl  get deployments -l environment=development,tier=front-end`** to find only the pods matching both labels![enter image description here](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/images/kubectl_multi_labels.png)
  
- 11. Annotations, are like labels in that they are a key/value metadata about an object, but unlike labels, they are not used for selection and the metadata in an annotation can be small or large, structured or unstructured, and can include characters not permitted by labels. 
-Execute the command  **`kubectl annotate deployment python-app app.owner.pager=(909) 999-9999`** to give the deployment an app owner phone number.
+ Annotations, are like labels in that they are a key/value metadata about an object, but unlike labels, they are not used for selection and the metadata in an annotation can be small or large, structured or unstructured, and can include characters not permitted by labels. This metadata can be read via the api and used in third-party management applications. 
+ 
+ 12. Execute the command  **`kubectl annotate deployment python-app app.owner.pager=(909) 999-9999`** to give the deployment an app owner phone number.
 ![enter image description here](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/images/kubectl_annotations.png)
+
+13. Once again, make sure do delete your deployments with **kubectl**
 
 [Continue to the Next Task](https://github.com/Burwood/containers101/blob/master/kubernetes_lab/task_5.md)
