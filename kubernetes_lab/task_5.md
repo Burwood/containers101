@@ -3,7 +3,7 @@ When you get going, you may have a dozen or so pods in development, but when you
 
  1. Redeploy our **python-app-deployment.yaml** file from the last task
  2. Use **kubectl** to get a list of the pods that were created
- 3. Execute the command **`kubectl label pods python-app-<uuid> app.owner=janderton`**
+ 3. Execute the command **`kubectl label pods python-app-<uuid> app.owner=janderton`** for one of the pods
  4. Now use **kubectl** to get the pods and use --show-labels=true to show all the labels
  5. Try **`kubectl get pods -L app.owner`** or **`kubectl get pods -l app.owner=<USER_NAME>`** as well to show the label in **get pods** output or to filter on just that label![enter image description here](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/images/kubectl_pod_labels.png)
 
