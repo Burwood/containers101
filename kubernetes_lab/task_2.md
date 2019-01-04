@@ -1,24 +1,17 @@
 ## Learning your tools
-Being an Orchestrator of containers, there are various tools that you will use to manage Kubernetes. 
+Being an Orchestrator of Containers, there are various tools that you will use to manage Kubernetes. 
 
  1. The most basic one is Kubectl (pronounced Cube-Cuddle or Cube-Control...[yes this is a religious argument](https://www.reddit.com/r/kubernetes/comments/5qthoc/how_should_i_pronounce_kubectl/))
 Kubectl controls the Kubernetes cluster manager and our good friends at both Google and Docker have made life easier and included it in their SDK's now as well.
+ 2. In the Cloud Shell, enter the **`kubectl`** command and take note of the commands and option available to you
+ 3. Execute the command **`kubectl`** to see that you are connected to your cluster
+![enter image description here](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/images/kubectl_cluster-info.png)
 
-Find more information at: https://kubernetes.io/docs/reference/kubectl/overview/
-```
-Basic Commands (Beginner):
-  create         Create a resource from a file or from stdin.
-  expose         Take a replication controller, service, deployment or pod and expose it as a new Kubernetes Service
-  run            Run a particular image on the cluster
-  set            Set specific features on objects
+ 4. Now lets execute the **`kubectl get namespaces`** command![enter image description here](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/images/kubectl_show_namespaces.png)
+ Note that there is a **default** namespace and two **kube-\*** namespaces. Default is where your pods, deployments, etc. would go if you didnt specify a namespace and kube-* is for system level things like drivers and add-ons.
 
-Basic Commands (Intermediate):
-  explain        Documentation of resources
-  get            Display one or many resources
-  edit           Edit a resource on the server
-  delete         Delete resources by filenames, stdin, resources and names, or by resources and label selector
+ 5. Lastly, execute the **`kubectl config get-contexts`** command. This command is handy when you are working with multiple clusters as you see it tells you your current context and using the use-context option will allow you to switch between clusters.![enter image description here](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/images/kubectl_config_get-contexts.png)
 
-  ```
-2. Kubeadm and Kubefed are two more tools that have recently come to general availability that help you to stand up and manage clusters if you are building stand-alone systems, but as we are focused on GKE it is outside the scope of this tutorial.
+6. Kubeadm and Kubefed are two more tools that have recently come to general availability that help you to stand up and manage clusters if you are building stand-alone systems, but as we are focused on GKE it is outside the scope of this tutorial.
 
 [Continue to the Next Task](https://github.com/Burwood/containers101/blob/master/kubernetes_lab/task_3.md)
