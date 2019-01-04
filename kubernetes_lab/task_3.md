@@ -45,7 +45,7 @@ While the pod will only give you a session if the container started up correctly
 11. Type **`Exit`** to leave the pod shell session
 
     Now, let's use another pod to test and see that our port is available.
-12. Using **kubectl** and the [yaml file](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/assets/sleep-pod.yml)  I prepared to create a pod called sleep-pod.
+12. Using **kubectl** and the [yaml file](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/assets/sleep-pod.yaml)  I prepared to create a pod called sleep-pod.
 13. Use **kubectl describe** to get the Pod's IP address
 14. Now, use **kubectl exec** to open a **`/bin/sh`** and use **`curl http://<IP_ADDRESS>:8080`** to see that the port is open![enter image description here](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/images/kubectl_curl_pod.png)
 
