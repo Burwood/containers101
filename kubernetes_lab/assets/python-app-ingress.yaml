@@ -8,8 +8,8 @@ metadata:
 spec:
   rules:
   - http:
-        paths:
-          path: /
-          - backend:
-              serviceName: python-app-service
-              servicePort: 80
+      paths:
+      - path: /
+        backend:
+          serviceName: python-app-service
+          servicePort: 80
