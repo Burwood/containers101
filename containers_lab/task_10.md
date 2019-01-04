@@ -12,12 +12,22 @@ Lets try it out
 
 ## Pushing to a Repo
 
- 1. If you are going to push the image to Docker Hub or a private repo,
+ 1. As we will be using Google's Container Registry (GCR) we need to enable the docker helper. In the Cloud Shell, execute the command: **`gcloud auth configure-docker`** and you will see something like
+```
+The following settings will be added to your Docker config
+filelocated at [/home/anderton_james/.docker/config.json]:
+{credHelpers": { "gcr.io": "gcloud", "us.gcr.io": "gcloud", 
+eu.gcr.io": "gcloud", "asia.gcr.io": "gcloud", "staging-k8s.gcr.io": 
+gcloud", "marketplace.gcr.io": "gcloud" }}Do you want to continue 
+Y/n)? y
+Docker configuration file updated.
+```
+ 3. If you are going to push the image to Docker Hub or a private repo,
     you will first need to **`docker login`**
     
- 2. Next, you will need to create an additional tag to your local image:
- **`docker tag <IMAGE ID> <HUBUSER_ID>/python-http-demo:1.0`**
+ 4. Next, you will need to create an additional tag to your local image:
+ **`docker tag <IMAGE ID> gcr.io/<PROJECT_ID>/python-http-demo:1.0`** where PROJECT_ID is your Google project id (containers101)
  
- 3. Last, you will push the image via the command: **`docker push <HUBUSER_ID>/python-http-demo:1.0`**
+ 5. Last, you will push the image via the command: **`docker push gcr.io/<PROJECT_ID>/python-http-demo:1.0`**
 
 [Continue to the Next Task](https://github.com/Burwood/containers101/blob/master/containers_lab/task_11.md)
