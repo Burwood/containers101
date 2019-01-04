@@ -43,6 +43,14 @@ Let's use the [yaml file](https://github.com/Burwood/containers101/raw/master/ku
 ![enter image description here](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/images/kubectl_create_pod.png) 
 While the pod will only give you a session if the container started up correctly, this can be a valuable tool on many occasions when your pod half-way works.
 11. Type **`Exit`** to leave the pod shell session
-12. Run the command **`kubectl delete python-app`** to remove the pod we created.
+
+    Now, let's use another pod to test and see that our port is available.
+12. Using **kubectl** and the [yaml file](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/assets/sleep-pod.yml)  I prepared to create a pod called sleep-pod.
+13. Use **kubectl describe** to get the Pod's IP address
+14. Now, use **kubectl exec** to open a **`/bin/sh`** and use **`curl http://<IP_ADDRESS>:8080`** to see that the port is open
+
+    *You will notice, if you try to reach the python app from outside the cluster, it will not be available. You will need  a few more pieces to make it available and we will walk through those in the coming labs.*
+
+16. Run the command **`kubectl delete pod python-app`** to remove the pod we created.
 
 [Continue to the Next Task](https://github.com/Burwood/containers101/blob/master/kubernetes_lab/task_4.md)
