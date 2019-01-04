@@ -1,4 +1,4 @@
+## Create labels, select pods to view by  labelSets, etc.
 
 
-
-> Written with [StackEdit](https://stackedit.io/).
+[Continue to the Next Task](https://github.com/Burwood/containers101/blob/master/kubernetes_lab/task_5.md)
