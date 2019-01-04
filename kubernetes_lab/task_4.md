@@ -7,10 +7,11 @@ As Pods are meant to be ephemeral in nature, you will almost never want to actua
  3. Note the **spec** section of the deployment yaml... it has keys such as **strategy** which controls how the pods are updated, and **template** which lays out the spec for how the pods are built as well as labels for both and a namespace.
  
  4. Copy the contents of the yaml deployment file from step 2 and name the new file **python-app-deployment.yaml**
- 5.  Now use **kubectl** to create a deployment with the new file![enter image description here](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/images/kubectl_create_deployment.png)
+ 5.  Now use **kubectl** to create a deployment with the new file and verify it's up![enter image description here](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/images/kubectl_create_deployment.png)
 
  6. Use **kubectl** and delete one of the python-app pods, then note what happens when you use **`kubectl get pods`**![enter image description here](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/images/kubectl_delete_pods.png)
-The deployment creates a new pod and schedules the old one for termination but waits till the new one is running plus the termination-graceperiod stated in the deployment file's pod spec.
+The deployment creates a new pod and schedules the old one for termination but waits till the new one is running plus the TerminationGracePeriod stated in the deployment file's pod spec.
+
 7. Use **kubectl** to clean up our mess but pay attention and delete the **deployment** object or you'll just watch a new pod get created again.
 
 [Continue to the Next Task](https://github.com/Burwood/containers101/blob/master/kubernetes_lab/task_5.md)
