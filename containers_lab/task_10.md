@@ -11,7 +11,7 @@ Lets try it out
  2. Next execute the command: **`docker tag  <IMAGE ID> python-http-demo:1.0`**
 
 ## Pushing to a Repo
-
+**This is the first task requiring the Google Cloud Trial Account being activated** If you do not wish to activate the trial, you can sign up for and use Docker Hub.
  1. As we will be using Google's Container Registry (GCR) we need to enable the docker helper. 
  2. In the Cloud Shell, execute the command: **`gcloud auth configure-docker`** and you will see something like
 ```
