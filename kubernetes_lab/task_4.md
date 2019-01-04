@@ -13,4 +13,4 @@ As Pods are meant to be ephemeral in nature, you will almost never want to actua
 The deployment creates a new pod and schedules the old one for termination but waits till the new one is running plus the termination-graceperiod stated in the deployment file's pod spec.
 7. Use **kubectl** to clean up our mess but pay attention and delete the **deployment** object or you'll just watch a new pod get created again.
 
-[Continue to the Next Task](https://github.com/Burwood/containers101/blob/master/kubernetes_lab/task_6.md)
+[Continue to the Next Task](https://github.com/Burwood/containers101/blob/master/kubernetes_lab/task_5.md)
