@@ -4,7 +4,7 @@ Being an Orchestrator of Containers, there are various tools that you will use t
  1. The most basic one is Kubectl (pronounced Cube-Cuddle or Cube-Control...[yes this is a religious argument](https://www.reddit.com/r/kubernetes/comments/5qthoc/how_should_i_pronounce_kubectl/))
 Kubectl controls the Kubernetes cluster manager and our good friends at both Google and Docker have made life easier and included it in their SDK's now as well.
  2. In the Cloud Shell, enter the **`kubectl`** command and take note of the commands and option available to you
- 3. Execute the command **`kubectl`** to see that you are connected to your cluster
+ 3. Execute the command **`kubectl cluster-info`** to see that you are connected to your cluster
 ![enter image description here](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/images/kubectl_cluster-info.png)
 
  4. Now lets execute the **`kubectl get namespaces`** command![enter image description here](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/images/kubectl_show_namespaces.png)
