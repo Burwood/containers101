@@ -1,4 +1,4 @@
-apiVersion: extensions/v1beta1
+apiVersion: v1
 kind: Pod
 metadata:
   labels:
@@ -9,7 +9,7 @@ spec:
   containers:
   - image: centos:latest
     imagePullPolicy: Always
-    name: app
+    name: sleep-pod
     command: ['/bin/bash']
     args: ["-c", "while true; do echo hello; sleep 10;done"]
     resources:
