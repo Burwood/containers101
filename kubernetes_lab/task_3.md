@@ -2,7 +2,7 @@
 A _Pod_ is the basic building block of Kubernetes, is the smallest and simplest unit in the Kubernetes object model that you create or deploy and is a group of one or more containers that are always co-located, co-scheduled, run in a shared context with shared storage/network, and have a specification for how to run the containers. Let's check out how to deploy a pod.
 
 1. Clone the repo:  **`https://github.com/Burwood/python-http.git`**
-2. In the newly created directory, create a file named **Dockerfile**, change it to match below:
+2. In the newly created directory, create a file named**Dockerfile**, change it to match below:
 
 ```
 FROM alpine:latest
@@ -26,7 +26,7 @@ CMD ["app.py"]
 ```
  1. Go ahead a build the docker file
  2.  Next tag the image `gcr.io/[PROJECT-ID]/[IMAGE]` using your google project id (containers101) and an image name, and push it to your repo
- 3. Now execute the command **`kubectl run app gcr.io/[PROJECT-ID]/[IMAGE]`**
+ 3. Now execute the command **`kubectl run app --image=gcr.io/[PROJECT-ID]/[IMAGE]`**
  4. To verify your pod is running correctly let's run **`kubectl get pods`**![enter image description here](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/images/kubectl_get_pods.png)
 
  5. If **`kubectl run`** ran successfully, but your **STATUS** shows ImageBackoff, you can run **`kubectl logs pod <pod-id>`** and see if the runtime left any useful errors. Oftentimes the CMD in the Dockerfile was wrong.
