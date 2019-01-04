@@ -1,4 +1,4 @@
-## Create labels and select pods to view by label sets
+## Creating and using labels, selectors and annotations
 When you get going, you may have a dozen or so pods in development, but when you make it to production (especially with a microservice based app) you could have hundreds of pods in your cluster and you'll need a way to categorize and work with these pods for debugging, deployment, and logging. Lets apply some labels and try it out.
 
  1. Redeploy our **python-app-deployment.yaml** file from the last task
