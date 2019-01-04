@@ -12,7 +12,8 @@ Lets try it out
 
 ## Pushing to a Repo
 
- 1. As we will be using Google's Container Registry (GCR) we need to enable the docker helper. In the Cloud Shell, execute the command: **`gcloud auth configure-docker`** and you will see something like
+ 1. As we will be using Google's Container Registry (GCR) we need to enable the docker helper. 
+ 2. In the Cloud Shell, execute the command: **`gcloud auth configure-docker`** and you will see something like
 ```
 The following settings will be added to your Docker config
 filelocated at [/home/anderton_james/.docker/config.json]:
