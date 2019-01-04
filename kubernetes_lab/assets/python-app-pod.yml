@@ -11,6 +11,8 @@ spec:
   - image: janderton/python-http-demo:latest
     imagePullPolicy: Always
     name: python-app
+    ports:
+    - containerPort: 8080
     resources:
       requests:
         cpu: 100m

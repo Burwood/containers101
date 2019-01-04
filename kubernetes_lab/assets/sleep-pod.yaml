@@ -1,16 +1,15 @@
----
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  labels:  
-    app: python-app
-  name: python-app
+  labels:
+    app: sleep-pod
+  name: sleep-pod
   namespace: default
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
-      app: python-app
+      app: sleep-pod
   strategy:
     rollingUpdate:
       maxSurge: 1
@@ -19,14 +18,14 @@ spec:
   template:
     metadata:
       labels:
-        app: python-app
+        app: sleep-pod
     spec:
       containers:
-      - image: janderton/python-http-demo:latest
+      - image: centos:latest
         imagePullPolicy: Always
-        name: python-app
-        ports:
-        - containerPort: 8080
+        name: app
+        command: ['/bin/bash']
+        args: ["-c", "while true; do echo hello; sleep 10;done"]
         resources:
           requests:
             cpu: 100m
