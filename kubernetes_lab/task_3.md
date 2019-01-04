@@ -1,5 +1,5 @@
 ## Deploy and manage a pod
-A _Pod_ is the basic building block of Kubernetes and the smallest and simplest unit in the Kubernetes object model that you create or deploy. A Pod represents a running process and its combined file system on your cluster. Let's deploy a pod.
+A _Pod_ is the basic building block of Kubernetes, is the smallest and simplest unit in the Kubernetes object model that you create or deploy and is a group of one or more containers that are always co-located, co-scheduled, run in a shared context with shared storage/network, and have a specification for how to run the containers. Let's check out how to deploy a pod.
 
 1. Clone the repo:  **`https://github.com/Burwood/python-http.git`**
 2. In the newly created directory, create a file named**Dockerfile**, change it to match below:
