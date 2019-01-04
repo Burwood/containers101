@@ -3,13 +3,11 @@ kind: Ingress
 metadata:
   name: python-app-ingress
   namespace: default
-  annotations:
-    kubernetes.io/ingress.class: nginx
 spec:
-  rules:
-  - http:
-      paths:
-      - path: /
-        backend:
-          serviceName: python-app-service
-          servicePort: 80
+ rules:
+ - http:
+     paths:
+     - path: /hostless
+       backend:
+           serviceName: python-app-service
+           servicePort: 80
