@@ -3,9 +3,10 @@ In tasks 3 and 4 we used a pod that had a defined containerPort and communicated
 
 Let's make our application available to the cluster via a service.
 
- 1. Using the yaml file I created, use **`kubectl create -f https://github.com/Burwood/containers101/raw/master/kubernetes_lab/assets/python-app-service.yml`** to create the python-app service object and use **`kubectl get service`** to verify it was created![enter image description here](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/images/kubectl_create_service.png)
+ 1. Redeploy our **python-app-deployment.yaml** file from task 4
+ 2. Using the yaml file I created, use **`kubectl create -f https://github.com/Burwood/containers101/raw/master/kubernetes_lab/assets/python-app-service.yml`** to create the python-app service object and use **`kubectl get service`** to verify it was created![enter image description here](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/images/kubectl_create_service.png)
 
- 2. Use **kubectl** and the [yaml file](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/assets/sleep-pod.yaml)  from task 3 to create another sleep-pod.
+ 3. Use **kubectl** and the [yaml file](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/assets/sleep-pod.yaml)  from task 3 to create another sleep-pod.
 3. Use **kubectl get service** to get the Service's IP address
 4. Now, use **kubectl exec**  on the **sleep-pod** pod to open a **`/bin/sh`** and use **`curl http://<IP_ADDRESS>:80`** to see that the port is open![enter image description here](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/images/kubectl_curl_service.png)
 As mentioned above, the ClusterIP is an internal facing only service... great for databases and things that should not normally be accessible from the outside. 
