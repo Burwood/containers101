@@ -11,4 +11,4 @@ spec:
  targetPort: 27017
  clusterIP: None
  selector:
- role: mongo
+   role: mongo
