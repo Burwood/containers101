@@ -9,8 +9,10 @@ spec:
   template:
     metadata:
       labels:
-      role: mongo
-      environment: test
+        role: mongo
+        environment: test
+        app: mongo
+        replicaset: MainRepSet
     spec:
       terminationGracePeriodSeconds: 10
       containers:
