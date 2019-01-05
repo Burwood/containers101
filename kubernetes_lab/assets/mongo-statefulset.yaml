@@ -35,6 +35,11 @@ spec:
               mountPath: /etc/secrets-volume
             - name: mongo-persistent-storage
               mountPath: /data/db
+           - name: mongo-sidecar
+             image: cvallance/mongo-k8s-sidecar
+             env:
+             - name: MONGO\_SIDECAR\_POD\_LABELS
+               value: "role=mongo,environment=test"
   volumeClaimTemplates:
   - metadata:
       name: mongo-persistent-storage
