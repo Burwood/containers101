@@ -6,7 +6,7 @@
   4. [Deploy an application via a Deployment](https://github.com/Burwood/containers101/blob/master/kubernetes_lab/task_4.md)
  5. [Creating and using labels, selectors and annotations ](https://github.com/Burwood/containers101/blob/master/kubernetes_lab/task_5.md)
  6. [Expose a Deployment via a Service](https://github.com/Burwood/containers101/blob/master/kubernetes_lab/task_6.md)
- 7. Create an Ingress
+ 7. [Create an Ingress](https://github.com/Burwood/containers101/blob/master/kubernetes_lab/task_7.md)
  8. Create a new Namespace for a second application
  9. Deploy a MongoDB instance as a StatefulSet
  10. Create a viewing-only RBAC role and bind it to a user
