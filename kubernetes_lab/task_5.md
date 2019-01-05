@@ -31,7 +31,7 @@ is a set based selector.
  
  Annotations, are like labels in that they are a key/value metadata about an object, but unlike labels, they are not used for selection and the metadata in an annotation can be small or large, structured or unstructured, and can include characters not permitted by labels. This metadata can be read via the api and used in third-party management applications. 
  
- 12. Execute the command  **`kubectl annotate deployment python-app app.owner.pager=(909) 999-9999`** to give the deployment an app owner phone number.
+ 12. Execute the command  **`kubectl annotate deployment python-app app.owner.pager='(909) 999-9999'`** to give the deployment an app owner phone number.
 ![enter image description here](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/images/kubectl_annotations.png)
 
 13. Once again, make sure do delete your deployments with **kubectl**
