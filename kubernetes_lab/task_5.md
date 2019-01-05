@@ -10,7 +10,7 @@ When you get going, you may have a dozen or so pods in development, but when you
  6. Copy the **python-app-deployment.yaml** file from before and save it as **python-app-prod-deployment.yaml**. Change the name and labels accordingly.
  7. Use **kubectl** to create a new deployment with this file.
  8. Use the command **`kubectl label deployments python-app environment=development`** and **`kubectl label deployments python-app -prod environment=production`**  to create an environment label
- 9. Use the command **`kubectl label deployments python-app tier=frontend`** and **`kubectl label deployments python-app -prod tier=front-end`**  to create an tier label
+ 9. Use the command **`kubectl label deployments python-app tier=frontend`** and **`kubectl label deployments python-app-prod tier=front-end`**  to create an tier label
   
     
 Via a _label selector_, you can identify a set of objects. The label selector is the core grouping primitive in Kubernetes and allows you to say "All objects with this label are part of this deployment". There are two kinds of selectors, **Equality based** and **Set based**. That is to say for example:
