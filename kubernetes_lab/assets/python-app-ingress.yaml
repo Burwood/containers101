@@ -7,7 +7,7 @@ spec:
  rules:
  - http:
      paths:
-     - path: /hostless
+     - path: /
        backend:
            serviceName: python-app-service
            servicePort: 80
