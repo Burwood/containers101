@@ -10,6 +10,7 @@ In general Kubernetes is a declarative system and as we noticed in tasks 3 and 4
    [ Services ]
 ```
 One thing to note, An ingress does not expose arbitrary ports or protocols. Exposing services other than HTTP and HTTPS to the internet typically uses a service of type **Service.Type=NodePort** or **Service.Type=LoadBalancer**.
+The major difference between a **Service** and an **Ingress** is the first is "Layer 4" (TCP/UDP over IP) and the second is "Layer 7" (HTTP)
 
 Lets create an Ingress so we can see our application from a browser:
 
