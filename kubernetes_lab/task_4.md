@@ -6,7 +6,7 @@ As Pods are meant to be ephemeral in nature, you will almost never want to actua
 
  3. Note the **spec** section of the deployment yaml... it has keys such as **strategy** which controls how the pods are updated, and **template** which lays out the spec for how the pods are built as well as labels for both and a namespace.
  
- 4. We can use the above yaml as a starting point for a deployment file, but would need to edit it to remove unique items and change others. Rerun the command from step 2, but redirect the output to a file named **python-app-deployment.yaml** *see this [gist](https://gist.github.com/janderton/3ff41ed203c9463068e42ca7d25bfe24) for the detailed edits*
+ 4. We can use the above yaml as a starting point for a deployment file, but would need to edit it to remove unique items and change others. Rerun the command from step 2, but redirect the output to a file named **python-app-deployment.yaml** *[see this diff for the detailed edits](https://gist.github.com/janderton/3ff41ed203c9463068e42ca7d25bfe24)*
  
  6.  Now use **kubectl** to create a deployment with the new file and verify it's up![enter image description here](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/images/kubectl_create_deployment.png)
 
