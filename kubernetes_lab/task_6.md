@@ -6,9 +6,30 @@ Let's make our application available to the cluster via a service.
  1. Using the yaml file I created, use **`kubectl create -f https://github.com/Burwood/containers101/raw/master/kubernetes_lab/assets/python-app-service.yml`** to create the python-app service object and use **`kubectl get service`** to verify it was created![enter image description here](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/images/kubectl_create_service.png)
 
  2. Use **kubectl** and the [yaml file](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/assets/sleep-pod.yaml)  from task 3 to create another sleep-pod.
-13. Use **kubectl get service** to get the Service's IP address
-14. Now, use **kubectl exec**  on the **sleep-pod** pod to open a **`/bin/sh`** and use **`curl http://<IP_ADDRESS>:80`** to see that the port is open![enter image description here](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/images/kubectl_curl_service.png)
+3. Use **kubectl get service** to get the Service's IP address
+4. Now, use **kubectl exec**  on the **sleep-pod** pod to open a **`/bin/sh`** and use **`curl http://<IP_ADDRESS>:80`** to see that the port is open![enter image description here](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/images/kubectl_curl_service.png)
+As mentioned above, the ClusterIP is an internal facing only service... great for databases and things that should not normally be accessible from the outside. 
+5. Now use **`kubectl delete service python-app-service`** to remove the service so we can create an external facing service.
+6. Using the yaml file from above in step 2, edit the file and add **`  type: LoadBalancer`** right above the **selector** line and indented the same amount. (As seen below)
+```
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: python-app-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: python-app
+  ports:
+  - name: http
+    protocol: TCP
+    port: 80
+    targetPort: 8080
+```
 
-15. **This time, leave your deployment and service running for our next task**
+8. Now use **kubectl** and create the new service![enter image description here](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/images/kubectl_create_service_lb.png)
+
+9. **This time, leave your deployment and service running for our next task**
 
 [Continue to the Next Task](https://github.com/Burwood/containers101/blob/master/kubernetes_lab/task_7.md)
