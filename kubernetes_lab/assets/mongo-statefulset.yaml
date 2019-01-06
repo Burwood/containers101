@@ -3,12 +3,14 @@ kind: StatefulSet
 metadata:
   name: mongo
   namespace: sample-app
+  
 spec:
   serviceName: "mongo"
   replicas: 3
   template:
     metadata:
       labels:
+        role: mongo
         app: mongo
         replicaset: MainRepSet
     spec:
@@ -22,6 +24,8 @@ spec:
             - rs0
             - "--smallfiles"
             - "--noprealloc"
+            - "--bind_ip"
+            - "0.0.0.0"            
           ports:
             - containerPort: 27017
           volumeMounts:
