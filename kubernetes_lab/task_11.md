@@ -3,8 +3,8 @@ Before StatefulSets when you had an application that needed volumes and replicat
 
 First, we need to create another type of **Service** called a **Headless Service** to point to our MongoDB Pods. It's called **Headless** because it has no loadbalancer and is just used for DNS. 
  1. Using the [yaml file](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/assets/mongo-service.yaml) provided, **`kubectl create`** our Service object in the new namespace **sample-app** and view it once its deployed.
- 
 ![enter image description here](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/images/kubectl_get_headless_service.png)
+
 *Pay special attention to the **selector** in the service yaml file, if the pods we're about to create in the stateful set do not match the selector, traffic will not get routed to them*
 
  2. Next use the [yaml file](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/assets/mongo-statefulset.yaml) provided to **`kubectl create`** the Mongo StatefulSet![enter image description here](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/images/kubectl_create_statefulset.png)
