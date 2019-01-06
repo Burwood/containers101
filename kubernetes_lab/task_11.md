@@ -25,9 +25,9 @@ Now let's insert some data.
 8. Now run the command **`kubectl -n sample-app run --rm=true -it --pod-running-timeout=1m0s mongo-python-demo --image
 =janderton/mongo-python-demo --restart=Never`** to kick off a run once job using a docker image I created with a simple python script to query our database from a **separate** pod to prove we can contact the database across the internal cluster network. [(click here for the source code)](https://github.com/janderton/python-mongo-demo.git)![enter image description here](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/images/kubectl_run_once_mongo-demo-pod.png)
 
-9.  Now, use **`kubectl delete statefulset mongo`** to delete your mongo deployment
+9.  Now, use **`kubectl -n sample-app delete statefulset mongo`** to delete your mongo deployment
 
-10.Next use the [yaml file](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/assets/mongo-statefulset.yaml) provided to recreate the Mongo StatefulSet 
+10. Next use the [yaml file](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/assets/mongo-statefulset.yaml) provided to recreate the Mongo StatefulSet 
 
 11. Now run the command **`kubectl -n sample-app run --rm=true -it --pod-running-timeout=1m0s mongo-python-demo --image=janderton/mongo-python-demo --restart=Never`** to kick off the run once job again and note the output.![enter image description here](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/images/kubectl_run_once_mongo-demo-pod_second.png)
  **There is a fourth entry even though you deleted the MongoDB StatefulSet!** This is the value of persistent storage. 
