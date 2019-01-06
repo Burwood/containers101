@@ -4,7 +4,6 @@ metadata:
   labels:
     app: sleep-pod
   name: sleep-pod
-  namespace: default
 spec:
   containers:
   - image: centos:latest
