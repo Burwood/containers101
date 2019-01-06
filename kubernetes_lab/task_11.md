@@ -16,7 +16,7 @@ Now let's insert some data.
 
 5. First, run the command **`use test-database-1`**
 
-6. Next, run the command **`db.mytable.insert({"author": "Duke", "title" : "PyMongo 101", "tags" : ["MongoDB", "PyMongo", "Tutorial"], "date" :"01/05/2019")`**![enter image description here](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/images/kubectl_mongo_write.png)
+6. Next, run the command **`db.mytable.insert({"author": "Duke", "title" : "PyMongo 101", "tags" : ["MongoDB", "PyMongo", "Tutorial"], "date" :"01/05/2019"})`**![enter image description here](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/images/kubectl_mongo_write.png)
 7.  Next, run the command **`db.mytable.find()`** to print out all records![enter image description here](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/images/kubectl_mongo_find.png)
 *for those that wondered, I have two items because I didnt snap the screenshot the first time.*
 
