@@ -27,7 +27,7 @@ Now let's insert some data.
 
 9.  Now, use **`kubectl -n sample-app delete statefulset mongo`** to delete your mongo deployment
 
-10. Next use the [yaml file](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/assets/mongo-statefulset.yaml) provided to recreate the Mongo StatefulSet 
+10. Recreate that Mongo StatefulSet we just deleted (it'll make sense in a moment)
 
 11. Now run the command **`kubectl -n sample-app run --rm=true -it --pod-running-timeout=1m0s mongo-python-demo --image=janderton/mongo-python-demo --restart=Never`** to kick off the run once job again and note the output.![enter image description here](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/images/kubectl_run_once_mongo-demo-pod_second.png)
  **There is a fourth entry even though you deleted the MongoDB StatefulSet!** This is the value of persistent storage. 
