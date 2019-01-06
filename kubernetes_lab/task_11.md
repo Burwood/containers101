@@ -33,6 +33,6 @@ Now let's insert some data.
 
 and here is the view after. 
 ![enter image description here](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/images/GKE_workload_view_postDelete.png)
-**Think about the difference in speed of cleanup this was from doing it object by object!**
+**Think about the difference in speed of cleanup this was from doing it object by object!** It not only cleaned up your StatefulSet, but it also cleaned up the Service object and the Persistent Volume Claim for each pod in the set.
 
 [Continue to the Next Task](https://github.com/Burwood/containers101/blob/master/kubernetes_lab/task_12.md)
