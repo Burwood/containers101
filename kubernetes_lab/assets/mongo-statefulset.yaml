@@ -13,11 +13,6 @@ spec:
         replicaset: MainRepSet
     spec:
       terminationGracePeriodSeconds: 10
-      volumes:
-        - name: secrets-volume
-          secret:
-            secretName: shared-bootstrap-data
-            defaultMode: 256
       containers:
         - name: mongo
           image: mongo
@@ -30,16 +25,13 @@ spec:
           ports:
             - containerPort: 27017
           volumeMounts:
-            - name: secrets-volume
-              readOnly: true
-              mountPath: /etc/secrets-volume
             - name: mongo-persistent-storage
-              mountPath: /data/db
-           - name: mongo-sidecar
-             image: cvallance/mongo-k8s-sidecar
-             env:
-             - name: MONGO\_SIDECAR\_POD\_LABELS
-               value: "role=mongo,environment=test"
+              mountPath: /data/db          
+        - name: mongo-sidecar
+          image: cvallance/mongo-k8s-sidecar
+          env:
+          - name: MONGO\_SIDECAR\_POD\_LABELS
+            value: "role=mongo,environment=test"
   volumeClaimTemplates:
   - metadata:
       name: mongo-persistent-storage
