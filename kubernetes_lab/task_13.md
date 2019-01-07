@@ -78,4 +78,6 @@ Lasly, you can create a clusterrolebinding that will do what it sounds like... b
  2. Go ahead and view the clusterrolebinding![enter image description here](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/images/kubectl_view_clusterrolebinding.png)
 
 
-[Return to the Index](https://github.com/Burwood/containers101/blob/master/kubernetes_lab/README.md)
+Let's leave everything running for the last task.
+
+[Continue to the Next Task](https://github.com/Burwood/containers101/blob/master/kubernetes_lab/task_14.md)
