@@ -34,10 +34,11 @@ metadata:
 
    Now lets deploy a service so we can see our application. 
 7. Use the [yaml file](https://github.com/Burwood/python-mongo_todo/raw/master/python-todo-service.yaml) provided to **kubectl** create the service
-8. Use **kubectl describe** and check periodically to see when your service has an external IP address and open it in the browser once it does.![enter image description here](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/images/kubectl_view_python-todo.png)
+8. Use **kubectl describe** and check periodically to see when your service has an external IP address and open it in the browser once it does.
+ ![enter image description here](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/images/kubectl_view_python-todo.png)
 
    Its a lonely web form, but it takes a key/value pair and feeds it to our mongo service and reads back all the values that have been entered.
    
-9. For now, let's leave our pods running.
+10. For now, let's leave our pods running.
 
 [Continue to the Next Task](https://github.com/Burwood/containers101/blob/master/kubernetes_lab/task_13.md)
