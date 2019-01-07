@@ -3,7 +3,7 @@
 The well known twelve-factor methodology for building modern apps states that configuration should be injected into containers at runtime. These values are expected from one of the following: 1.) The command line. 2.) Environment variables or 3.) From files or volumes.
 
 We are going to setup an environment variable for a python app so that we can set it's MONGO_URI dynamically.
-1. Use **kubectl** to create the secure-app namespace
+1. Use **kubectl** to create a `secure-app` namespace
  2. Using **`kubectl -n secure-app create -f https://github.com/Burwood/python-mongo_todo/raw/master/python-todo-configmap.yaml`** generate our **ConfigMap**
  3. Use both **`kubectl get configmap <object> -o yaml`** and **`kubectl describe`** to view the contents![enter image description here](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/images/kubectl_get_configmap.png)
 
