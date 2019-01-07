@@ -12,7 +12,7 @@
  10. [Deploy a MongoDB instance as a StatefulSet with Persistent Storage](https://github.com/Burwood/containers101/blob/master/kubernetes_lab/task_10.md)
  11. [Using ConfigMaps and Secrets](https://github.com/Burwood/containers101/blob/master/kubernetes_lab/task_11.md)
  12. [Using a Service Account with your application](https://github.com/Burwood/containers101/blob/master/kubernetes_lab/task_12.md)
- 13. Create a viewing-only RBAC role and bind it to a user
+ 13. [Create a viewing-only RBAC role and bind it to a user](https://github.com/Burwood/containers101/blob/master/kubernetes_lab/task_13.md)
  14. View workloads from the GKE Dashboard
  15. Update the Deployment manifest and apply via Kubectl, watch it do a rolling upgrade
 
