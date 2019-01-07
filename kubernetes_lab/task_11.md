@@ -1,6 +1,6 @@
 ## Using ConfigMaps and Secrets
 
-The well known twelve-factor methodology for building these apps states that configuration should be injected into containers at runtime. These values are expected from one of the following: 1.) The command line. 2.) Environment variables or 3.) From files or volumes.
+The well known twelve-factor methodology for building modern apps states that configuration should be injected into containers at runtime. These values are expected from one of the following: 1.) The command line. 2.) Environment variables or 3.) From files or volumes.
 
 We are going to setup an environment variable for a python app so that we can set it's MONGO_URI dynamically.
 1. Use **kubectl** to create the secure-app namespace
