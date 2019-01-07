@@ -9,8 +9,9 @@ kubectl get serviceAccounts
 NAME      SECRETS    AGE
 default   1          1d
 ```
+To use a non-default service account, simply set the `spec.serviceAccountName` field of a pod to the name of the service account you wish to use.  
 
-To use a non-default service account, simply set the `spec.serviceAccountName` field of a pod to the name of the service account you wish to use.  Lets create a new namespace and provision a pod into it with a non-default service account:
+Lets create a new namespace and provision a pod into it with a non-default service account:
 
 2. Now, use the command **`kubectl -n secure-app create serviceaccount secure-app`** to create our secure-app service account
 
@@ -19,8 +20,7 @@ To use a non-default service account, simply set the `spec.serviceAccountName` f
 4. Using the command **`kubectl -n secure-app get serviceaccount secure-app -o yaml`** dump out the yaml version and think about what you'd need to be able to create your own from a file later.
 
 You will wind up with something like this: (plus some labels)
-
-```
+ ```
 apiVersion: v1
 kind: ServiceAccount
 metadata:
@@ -32,6 +32,12 @@ metadata:
 
 6. Display the pods in our **secure-app** namespace and describe the pod created for the python-todo deployment![enter image description here](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/images/kubectl_use_serviceaccount.png)
 
-For now, let's leave our pods running.
+   Now lets deploy a service so we can see our application. 
+7. Use the [yaml file](https://github.com/Burwood/python-mongo_todo/raw/master/python-todo-service.yaml) provided to **kubectl** create the service
+8. Use **kubectl describe** and check periodically to see when your service has an external IP address and open it in the browser once it does.![enter image description here](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/images/kubectl_view_python-todo.png)
+
+   Its a lonely web form, but it takes a key/value pair and feeds it to our mongo service and reads back all the values that have been entered.
+   
+9. For now, let's leave our pods running.
 
 [Continue to the Next Task](https://github.com/Burwood/containers101/blob/master/kubernetes_lab/task_13.md)
