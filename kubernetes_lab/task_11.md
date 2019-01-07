@@ -17,7 +17,9 @@ metadata:
   namespace: secure-app
 type: Opaque
 data:
-  IMAGE_PULL_SECRET: aHR0cDovLzRiMzFwc2QyaGw5bmxoOjVSZDJfNDF0VWc1RU5BUHQtWE1fbFdhWmNBQHVzLWVhc3Qtc3RhdGljLTA0LnF1b3RhZ3VhcmQuY29tOjkyOTM=```
+  IMAGE_PULL_SECRET: aHR0cDovLzRiMzFwc2QyaGw5bmxoOjVSZDJfNDF0VWc1RU5BUHQtWE1fbFdhWmNBQHVzLWVhc3Qtc3RhdGljLTA0LnF1b3RhZ3VhcmQuY29tOjkyOTM=
+  ```
+  
 **Notice that the data for the secret has been ran through base64 encryption beforehand**
 
 ![enter image description here](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/images/kubectl_create_secrets.png)
