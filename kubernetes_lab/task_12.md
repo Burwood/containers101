@@ -11,7 +11,7 @@ default   1          1d
 ```
 To use a non-default service account, simply set the `spec.serviceAccountName` field of a pod to the name of the service account you wish to use.  
 
-Lets create a new namespace and provision a pod into it with a non-default service account:
+Lets provision a pod into our secure-app namespace it with a non-default service account:
 
 2. Now, use the command **`kubectl -n secure-app create serviceaccount secure-app`** to create our secure-app service account
 
