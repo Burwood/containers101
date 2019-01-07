@@ -73,6 +73,6 @@ rules:
 
 Lasly, you can create a clusterrolebinding that will do what it sounds like... bind a role to a user or serviceaccount. Let's go ahead and try that last one.
 
- 2. Run the command: **`kubectl create clusterrolebinding secure-app-admin --clusterrole cluster-admin --serviceaccount=secure-app:default`**
+ 1. Run the command: **`kubectl create clusterrolebinding secure-app-admin --clusterrole cluster-admin --serviceaccount=secure-app:default`**
 
- 3. Go ahead and view the clusterrolebinding![enter image description here](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/images/kubectl_view_clusterrolebinding.png)
+ 2. Go ahead and view the clusterrolebinding![enter image description here](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/images/kubectl_view_clusterrolebinding.png)
