@@ -25,4 +25,6 @@ metadata:
 6. Next, use the provided [yaml file](https://github.com/Burwood/python-mongo_todo/raw/master/python-todo-deployment.yaml) to build a pod using the secure-app service account
 7. Display the pods in our **secure-app** namespace and describe the pod created for the python-todo deployment![enter image description here](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/images/kubectl_use_serviceaccount.png)
 
+For now, let's leave our pods running.
+
 [Continue to the Next Task](https://github.com/Burwood/containers101/blob/master/kubernetes_lab/task_13.md)
