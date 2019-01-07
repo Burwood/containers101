@@ -40,4 +40,4 @@ and here is the view after.
 **Think about the difference in speed of cleanup this was from doing it object by object!** 
 It not only cleaned up your StatefulSet, but it also cleaned up the Service object and the Persistent Volume Claim for each pod in the set.
 
-[Continue to the Next Task](https://github.com/Burwood/containers101/blob/master/kubernetes_lab/task_12.md)
+[Continue to the Next Task](https://github.com/Burwood/containers101/blob/master/kubernetes_lab/task_11.md)
