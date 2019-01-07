@@ -10,7 +10,8 @@ We are going to setup an environment variable for a python app so that we can se
 This works great for things that you dont mind being out in the open, however, when you have access keys and secrets you'll want them to be stored opaquely so users cannot see them. Kubernetes Secrets take care of this for us.
 
  1. Using the below, create a yaml file and upload it to the **secure-app** namespace
- ```apiVersion: v1
+ ```
+apiVersion: v1
 kind: Secret
 metadata:
   name: backend-secrets
