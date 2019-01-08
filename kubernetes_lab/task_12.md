@@ -32,7 +32,7 @@ metadata:
     1. Create the mongo service on our namespace from this [mongo-service.yaml](https://raw.githubusercontent.com/Burwood/containers101/master/kubernetes_lab/assets/mongo-service.yaml) file
     2. Use this [diff](https://gist.github.com/janderton/806165940859978fe525236ea8c8a858) to see where to modify the [mongo-statefulset.yaml](https://raw.githubusercontent.com/Burwood/containers101/master/kubernetes_lab/assets/mongo-statefulset.yaml) from before then **kubectl** to create it
     3. connect to the mongo pod and initialize the mongo replic set   
-    **`kubectl -n sample-app exec -it mongo-0 mongo`**   
+    **`kubectl -n secure-app exec -it mongo-0 mongo`**   
     **`rs.initiate()`**
  
 6. Next, use the provided [yaml file](https://github.com/Burwood/python-mongo_todo/raw/master/python-todo-deployment.yaml) to deploy a pod using the secure-app service account. This will also point to the configMap we created earlier to grab that mongo-uri.
