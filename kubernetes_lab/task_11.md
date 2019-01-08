@@ -5,7 +5,8 @@ The well known twelve-factor methodology for building modern apps states that co
 We are going to setup an environment variable for a python app so that we can set it's MONGO_URI dynamically.
 1. Use **kubectl** to create a `secure-app` namespace
  2. Using **`kubectl -n secure-app create -f https://github.com/Burwood/python-mongo_todo/raw/master/python-todo-configmap.yaml`** generate our **ConfigMap**
- 3. Use both **`kubectl get configmap <object> -o yaml`** and **`kubectl describe`** to view the contents![enter image description here](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/images/kubectl_get_configmap.png)
+ 3. Use both **`kubectl get configmap <object> -o yaml`** and **`kubectl describe`** to view the contents![enter image description here](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/images/kubectl_get_configmap.png)  
+ *We'll be using the Mongo URI from this config map in the next task*
 
 This works great for things that you dont mind being out in the open, however, when you have access keys and secrets you'll want them to be stored opaquely so users cannot see them. Kubernetes Secrets take care of this for us.
 
