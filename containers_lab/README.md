@@ -1,5 +1,6 @@
 ## **Containers Lab Agenda**
 
+ 0. [Log in to Google Cloud Shell](https://github.com/Burwood/containers101/raw/master/containers_lab/task_0.md)
  1. [Search for images in a Public Registry](https://github.com/Burwood/containers101/blob/master/containers_lab/task_1.md)
  2. [Inspect Images in Public Docker Registry](https://github.com/Burwood/containers101/blob/master/containers_lab/task_2.md)
  3. [Pull down a python image](https://github.com/Burwood/containers101/blob/master/containers_lab/task_3.md)
