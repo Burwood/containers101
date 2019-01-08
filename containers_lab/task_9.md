@@ -3,7 +3,7 @@ While in production, containers are intended to be immutable and should only be 
 
  1. Create a detached container on port 8080 named **rubber-duck** to run our python demo from [task 6](https://github.com/Burwood/containers101/blob/master/containers_lab/task_6.md)
  2. Open a brower tab to **`http://localhost:8080`** and note the image
- 3. From the [previously cloned git repo directory](https://github.com/Burwood/python-http), execute the command: **`docker cp src/duck.png python-demo:/app/logo.png`**
+ 3. From the [previously cloned git repo directory](https://github.com/Burwood/python-http), execute the command: **`docker cp src/duck.png rubber-duck:/app/logo.png`**
  4. Refresh your browser page and you should be rewarded with a picture of very useful debugging tool.(credit to the [Pragmatic Programmer](https://www.youtube.com/watch?v=huOPVqztPdc))
  ![enter image description here](https://github.com/Burwood/containers101/raw/master/containers_lab/images/duck.png)
  
