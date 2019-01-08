@@ -7,7 +7,7 @@ When you get going, you may have a dozen or so pods in development, but when you
  4. Now use **kubectl** to get the pods and use --show-labels=true to show all the labels
  5. Try **`kubectl get pods -L app.owner`** or **`kubectl get pods -l app.owner=<USER_NAME>`** as well to show the label in **get pods** output or to filter on just that label![enter image description here](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/images/kubectl_pod_labels.png)
 
- 6. Copy the **python-app-deployment.yaml** file from before and save it as **python-app-prod-deployment.yaml**. Change the name and labels accordingly.
+ 6. Copy the **python-app-deployment.yaml** file from before and save it as **python-app-prod-deployment.yaml**. Change the **name** and **labels** fields accordingly.
  7. Use **kubectl** to create a new deployment with this file.
  8. Use the command **`kubectl label deployments python-app environment=development`** and **`kubectl label deployments python-app -prod environment=production`**  to create an environment label
  9. Use the command **`kubectl label deployments python-app tier=frontend`** and **`kubectl label deployments python-app-prod tier=frontend`**  to create an tier label
