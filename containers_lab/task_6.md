@@ -6,7 +6,7 @@ After creating the container image we need to create an instance and run it.
  
     This starts up an interactive session instance of the python-http-demo instance named python-demo, and publishes the exposed internal port 8080 to the host's port 8080
     
-2. In Google Cloud Shell, use the **Web Preview** button to verify the app is running and you see our logo
+2. In Google Cloud Shell, use the **Web Preview** button to verify the app is running and you see our logo ![enter image description here](https://github.com/Burwood/containers101/raw/master/containers_lab/images/GCP_CloudShellWebPreview.png)
 
 _If you are developing locally, open your browser to <http://localhost:8080>_
 
