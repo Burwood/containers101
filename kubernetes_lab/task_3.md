@@ -29,9 +29,9 @@ CMD ["app.py"]
  3. Now execute the command **`kubectl run app --image=gcr.io/[PROJECT-ID]/[IMAGE]`**
  4. To verify your pod is running correctly let's run **`kubectl get pods`**![enter image description here](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/images/kubectl_get_pods.png)
 
- 5. If **`kubectl run`** ran successfully, but your **STATUS** shows ImageBackoff, you can run **`kubectl logs <pod-id>`** and see if the runtime left any useful errors. Oftentimes the CMD in the Dockerfile was wrong.
+ 5. If **`kubectl run`** ran successfully, but your **STATUS** shows ImageBackoff, you can run **`kubectl logs <pod-name>`** and see if the runtime left any useful errors. Oftentimes the CMD in the Dockerfile was wrong.
  6. Next lets dump out the Pod's YAML description so we can take a look:
-**`kubectl get pod <pod-id> --output yaml`**![enter image description here](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/images/kubectl_pod_yaml.png)
+**`kubectl get pod <pod-name> --output yaml`**![enter image description here](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/images/kubectl_pod_yaml.png)
 It is pretty much the same as what you get when you describe the pod, however, now you can trim the excess and reuse it as a template for other pods
 
 Let's use the [yaml file](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/assets/python-app-pod.yml)  I prepared and create a new pod:
