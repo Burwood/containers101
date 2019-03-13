@@ -8,4 +8,6 @@ Microsoft provides each person with a microsoft account a $200 trial voucher for
 
 ![Azure Cloud Shell - Power Shell](https://github.com/Burwood/containers101/raw/azure/containers_lab/images/Azure_Cloud_Shell_posh.png)
 
+4. Also note that you can use the VS Code editor inline as well as upload/downloading files to the Cloud Shell.![Using Azure Cloud Shell](https://github.com/Burwood/containers101/raw/azure/containers_lab/images/Azure_Cloud_Shell_editor.png)
+
 [Continue to the Next Task](https://github.com/Burwood/containers101/blob/azure/containers_lab/azure/task_1.md)
