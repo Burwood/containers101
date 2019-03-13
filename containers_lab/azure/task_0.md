@@ -10,4 +10,11 @@ Microsoft provides each person with a microsoft account a $200 trial voucher for
 
 4. Also note that you can use the VS Code editor inline as well as upload/downloading files to the Cloud Shell.![Using Azure Cloud Shell](https://github.com/Burwood/containers101/raw/azure/containers_lab/images/Azure_Cloud_Shell_editor.png)
 
+5. Next, we need to create a Docker Host for us to test our work. Run the commands below: ```
+set  $subscription=`az account show|jq .id`
+set  $machine-name=containers101
+docker-machine --driver azure --azure-subscription-id $subscription $machine-name
+docker-machine env $machine-name --shell powershell
+```
+
 [Continue to the Next Task](https://github.com/Burwood/containers101/blob/azure/containers_lab/azure/task_1.md)
