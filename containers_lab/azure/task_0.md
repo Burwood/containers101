@@ -13,9 +13,9 @@ Microsoft provides each person with a microsoft account a $200 trial voucher for
 5. Next, we need to create a Docker Host for us to test our work. Run the commands below: 
 ```
 $subscription=az account show|jq .id
-$machine-name=containers101
-docker-machine --driver azure --azure-subscription-id $subscription $machine-name
-docker-machine env $machine-name --shell powershell
+$machineName=containers101
+docker-machine --driver azure --azure-subscription-id $subscription $machineName
+docker-machine env $machineName --shell powershell
 
 ```
 
