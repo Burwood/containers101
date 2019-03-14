@@ -21,4 +21,4 @@ The **Dockerfile** is what the docker engine requires to build new images and is
 		ENTRYPOINT ["python"]
 		CMD ["app.py"]
 
-[Continue to the Next Task](https://github.com/Burwood/containers101/blob/master/containers_lab/azure/task_5.md)
+[Continue to the Next Task](https://github.com/Burwood/containers101/blob/azure/containers_lab/azure/task_5.md)

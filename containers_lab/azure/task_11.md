@@ -9,4 +9,4 @@ So let's clean up the mess we made:
  4. Now run: **`docker volume prune`**
 
 
-[Return to the Index](https://github.com/Burwood/containers101/blob/master/containers_lab/azure/README.md)
+[Return to the Index](https://github.com/Burwood/containers101/blob/azure/containers_lab/azure/README.md)

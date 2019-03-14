@@ -16,11 +16,11 @@ to it.
 3. Press the **Red +** button at the bottom right corner and then press
     the **Create Bucket** button to create a bucket named **“test”**. (The
     icon is the second yellow one)![enter image description
-    here](https://github.com/Burwood/containers101/raw/master/containers_lab/azure/images/minio_create.png)
+    here](https://github.com/Burwood/containers101/raw/azure/containers_lab/azure/images/minio_create.png)
     
 4. Next press the Upload file button right above that and upload a test
     file.![enter image description
-    here](https://github.com/Burwood/containers101/raw/master/containers_lab/azure/images/minio_show_files.png)
+    here](https://github.com/Burwood/containers101/raw/azure/containers_lab/azure/images/minio_show_files.png)
     
 5. Now in the terminal, press **ctrl+c** to kill the container and run
     **`docker run -it -p 9000:9000 minio/minio server /data`** to create a
@@ -40,7 +40,7 @@ to it.
     launched the container
     
 8. Press the **Red +** button and then create a bucket again named
-    **“test”** and upload a test file.![enter image description here](https://github.com/Burwood/containers101/raw/master/containers_lab/azure/images/minio_create.png)
+    **“test”** and upload a test file.![enter image description here](https://github.com/Burwood/containers101/raw/azure/containers_lab/azure/images/minio_create.png)
     
 9. Now in the terminal, press **ctrl+c** to kill the container and run
     **`docker rm minio1`** to delete the container instance.
@@ -49,7 +49,7 @@ to it.
     minio-data:/data -v minio-config:/root/.minio minio/minio server
     /data`** and browse to the site again. Note that your files are still
     there\!   ![enter image description
-    here](https://github.com/Burwood/containers101/raw/master/containers_lab/azure/images/minio_show_files.png)
+    here](https://github.com/Burwood/containers101/raw/azure/containers_lab/azure/images/minio_show_files.png)
 11. Once again, let's clean up our mess
 	1. Press **ctrl+c** to kill the container
 	2. Run **```docker
@@ -57,4 +57,4 @@ to it.
     3. Lastly, let's use a new command **```docker volume
     prune```** to clean up our volumes
 
-[Continue to the Next Task](https://github.com/Burwood/containers101/blob/master/containers_lab/azure/task_9.md)
+[Continue to the Next Task](https://github.com/Burwood/containers101/blob/azure/containers_lab/azure/task_9.md)

@@ -6,7 +6,7 @@ After creating the container image we need to create an instance and run it.
  
     This starts up an interactive session instance of the python-http-demo instance named python-demo, and publishes the exposed internal port 8080 to the host's port 8080
     
-2. In Google Cloud Shell, use the **Web Preview** button to verify the app is running and you see our logo ![enter image description here](https://github.com/Burwood/containers101/raw/master/containers_lab/azure/images/GCP_CloudShellWebPreview.png)
+2. In Google Cloud Shell, use the **Web Preview** button to verify the app is running and you see our logo ![enter image description here](https://github.com/Burwood/containers101/raw/azure/containers_lab/azure/images/GCP_CloudShellWebPreview.png)
 
 _If you are developing locally, open your browser to <http://localhost:8080>_
 
@@ -17,4 +17,4 @@ _If you are developing locally, open your browser to <http://localhost:8080>_
  5. Clean up your instance of this docker image with the command: 
  **`docker rm python-demo`** so that we can reuse that name again later
 
-[Continue to the Next Task](https://github.com/Burwood/containers101/blob/master/containers_lab/azure/task_7.md)
+[Continue to the Next Task](https://github.com/Burwood/containers101/blob/azure/containers_lab/azure/task_7.md)

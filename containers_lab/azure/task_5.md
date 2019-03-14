@@ -30,4 +30,4 @@ CMD ["app.py"]
 
 **It pays to know the source of your container images and often times you'll end up making your own due to size or package constraints.**
 
-[Continue to the Next Task](https://github.com/Burwood/containers101/blob/master/containers_lab/azure/task_6.md)
+[Continue to the Next Task](https://github.com/Burwood/containers101/blob/azure/containers_lab/azure/task_6.md)

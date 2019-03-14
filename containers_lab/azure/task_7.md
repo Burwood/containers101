@@ -17,4 +17,4 @@ You can attach to it later using **`docker attach python-demo`**, if you need to
 8. Once again, clean up your instance of this docker image with the command: 
  **`docker stop python-demo && docker rm python-demo`** so that we can reuse that name again later
 
-[Continue to the Next Task](https://github.com/Burwood/containers101/blob/master/containers_lab/azure/task_8.md)
+[Continue to the Next Task](https://github.com/Burwood/containers101/blob/azure/containers_lab/azure/task_8.md)

@@ -31,4 +31,4 @@ Docker configuration file updated.
  
  5. Last, you will push the image via the command: **`docker push gcr.io/<PROJECT_ID>/python-http-demo:1.0`**
 
-[Continue to the Next Task](https://github.com/Burwood/containers101/blob/master/containers_lab/azure/task_11.md)
+[Continue to the Next Task](https://github.com/Burwood/containers101/blob/azure/containers_lab/azure/task_11.md)

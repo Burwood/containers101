@@ -14,4 +14,4 @@ WORKDIR /inetpub/wwwroot
 COPY ${source:-obj/Docker/publish} . `
 ```
 
-[Continue to the Next Task](https://github.com/Burwood/containers101/blob/master/containers_lab/azure/task_5.md)
+[Continue to the Next Task](https://github.com/Burwood/containers101/blob/azure/containers_lab/azure/task_5.md)
