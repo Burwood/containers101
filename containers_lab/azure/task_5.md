@@ -1,7 +1,7 @@
 ## Build a docker image
 After you've created your Dockerfile, you need to compile the image.
 
- 1. Execute the command: `docker build -t python-http-demo:latest .`
+ 1. Execute the command: `docker build -t python-http-demo:v1 .`
  2. You will see it pull down the python container if you don't already have it locally, then it will walk through your build steps one by one creating new layers
  3. When it's done, you can execute the command `docker images` and see the newly created image. (Note its size!)
  4. Go back and edit your **Dockerfile**, change it to match below:
@@ -26,8 +26,12 @@ COPY ["src/", "/app/"]
 ENTRYPOINT ["python3"]
 CMD ["app.py"]
 ```
- 5. Run the same build command,  and then run `docker image ls` again and note the difference in size.
+ 
+ 5. Execute the command: `docker build -t python-http-demo:v2 .` and then run `docker image ls` again and note the difference in size.
+
+![Docker image ls](https://github.com/Burwood/containers101/blob/azure/containers_lab/images/Azure_docker_image_ls_posh.png)
 
 **It pays to know the source of your container images and often times you'll end up making your own due to size or package constraints.**
+
 
 [Continue to the Next Task](https://github.com/Burwood/containers101/blob/azure/containers_lab/azure/task_6.md)
