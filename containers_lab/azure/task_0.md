@@ -14,9 +14,14 @@ Microsoft provides each person with a microsoft account a $200 trial voucher for
 ```
 $subscription=az account show|jq .id
 $machineName="containers101"
-docker-machine --driver azure --azure-subscription-id $subscription $machineName
+docker-machine create --driver azure --azure-subscription-id $subscription $machineName
 docker-machine env $machineName --shell powershell
+& /usr/local/bin/docker-machine env $machineName --shell powershell | Invoke-Expression
 
 ```
+
+![Docker-Machine Create](https://github.com/Burwood/containers101/raw/azure/containers_lab/images/Azure_machine_create_posh.png)
+![Docker-Machine Setup](https://github.com/Burwood/containers101/raw/azure/containers_lab/images/Azure_machine_env_posh.png)
+
 
 [Continue to the Next Task](https://github.com/Burwood/containers101/blob/azure/containers_lab/azure/task_1.md)
