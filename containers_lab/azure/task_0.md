@@ -15,12 +15,16 @@ Microsoft provides each person with a microsoft account a $200 trial voucher for
 $subscription=az account show|jq .id
 $machineName="containers101"
 docker-machine create --driver azure --azure-subscription-id $subscription $machineName
-docker-machine env $machineName --shell powershell
-& /usr/local/bin/docker-machine env $machineName --shell powershell | Invoke-Expression
-
 ```
 
 ![Docker-Machine Create](https://github.com/Burwood/containers101/raw/azure/containers_lab/images/Azure_machine_create_posh.png)
+
+6. Now we need to configure the local docker cli to use the docker machine we created.
+```
+docker-machine env $machineName --shell powershell
+& /usr/local/bin/docker-machine env $machineName --shell powershell | Invoke-Expression
+```
+
 ![Docker-Machine Setup](https://github.com/Burwood/containers101/raw/azure/containers_lab/images/Azure_machine_env_posh.png)
 
 
