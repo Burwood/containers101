@@ -11,4 +11,4 @@ Let's have a look at the default Docker Hub repository and find an image to buil
 Notice the difference? It pays to think about how you search for something. You can also use the Web UI at https://hub.docker.com to search and filter on certified or official images
 
 
-[Continue to the Next Task](https://github.com/Burwood/containers101/blob/master/containers_lab/azure/task_2.md)
+[Continue to the Next Task](https://github.com/Burwood/containers101/blob/azure/containers_lab/azure/task_2.md)
