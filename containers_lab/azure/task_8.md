@@ -30,12 +30,12 @@ to it.
 6. This time lets add a volume mount so we can make the data
     persistent. Run the below commands:
     
-      - **`docker volume create minio-data && docker volume create
+      - **`docker volume create minio-data; docker volume create
         minio-config`**
       - **`docker run -it -p 9000:9000 --name minio1 -v minio-data:/data -v
         minio-config:/root/.minio minio/minio server /data`**
     
-7. Open your browser again to <http://localhost:9000> and enter the
+7. Open your browser again to `<http://<IP_ADDRESS>:9000>` and enter the
     AccessKey and SecretKey provided from the command line when you
     launched the container
     
@@ -52,9 +52,7 @@ to it.
     here](https://github.com/Burwood/containers101/raw/azure/containers_lab/images/minio_show_files.png)
 11. Once again, let's clean up our mess
 	1. Press **ctrl+c** to kill the container
-	2. Run **```docker
-    rm minio1```** to delete the container instance 
-    3. Lastly, let's use a new command **```docker volume
-    prune```** to clean up our volumes
+	2. Run **`docker rm minio1`** to delete the container instance 
+    3. Lastly, let's use a new command **`docker volume prune`** to clean up our volumes
 
 [Continue to the Next Task](https://github.com/Burwood/containers101/blob/azure/containers_lab/azure/task_9.md)
