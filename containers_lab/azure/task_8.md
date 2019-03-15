@@ -1,4 +1,4 @@
-##Attaching a volume to a container for persistent data
+## Attaching a volume to a container for persistent data
 
 While containers were originally designed for stateless applications
 where data was stored in a object based system, the community quickly
@@ -8,7 +8,7 @@ Let’s use an off the shelf Cloud Storage application and attach a volume
 to it.
 
 1. First lets open a port for our new app. Execute the command: **`az vm open-port --resource-group docker-machine --name $machineName --port 9000`**
-1. Now, run the following commands:   **`docker pull minio/minio`; `docker
+1. Now, run the following commands:   **`docker pull minio/minio; docker
     run -it -p 9000:9000 minio/minio server /data`**
 2. Open your browser to `http://<IP_ADDRESS>:9000` and enter the AccessKey
     and SecretKey provided from the commandline when you launched the
