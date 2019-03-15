@@ -23,8 +23,10 @@ Lets try it out
 
  - - - -
 
-### 7. If you are going to push the image to Docker Hub or another private repo, you will first need to `docker login`
-    1. Then, you would need to create an additional tag to your local image: **`docker tag <IMAGE ID> localrepo.io/<username>/python-http-demo:1.0`**
-    2. Last, you would push the image via the command: **`docker push localrepo.io/<username>/python-http-demo:1.0`**
+If you are going to push the image to Docker Hub or another private repo, you will first need to login via the **`docker login`** command
+
+  1. Then, you would need to create an additional tag to your local image: **`docker tag <IMAGE ID> localrepo.io/<username>/python-http-demo:1.0`**
+  2. Last, you would push the image via the command: **`docker push localrepo.io/<username>/python-http-demo:1.0`**
 
 [Continue to the Next Task](https://github.com/Burwood/containers101/blob/azure/containers_lab/azure/task_11.md)
+
