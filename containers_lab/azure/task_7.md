@@ -16,7 +16,7 @@ After running your first container you were probably left wondering... how is th
 You can attach to it later using **`docker attach python-demo`**, if you need to interact with the container more.
 7. Open your browser to the IP address from last task again and verify you see our logo
 
-![Docker Run](https://github.com/Burwood/containers101/raw/azure/containers_lab/images/Azure_browse_app_posh.png)
+![Docker Run](https://github.com/Burwood/containers101/raw/azure/containers_lab/images/Azure_browse_app.png)
 
 8. Once again, clean up your instance of this docker image with the command: 
  **`docker stop python-demo; docker rm python-demo`** so that we can reuse that name again later
