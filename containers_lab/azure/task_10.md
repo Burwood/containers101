@@ -7,28 +7,27 @@ Assuming you're tagging a local image you would use the format: `docker tag <IMA
 
 Lets try it out
 
- 1. Execute the command: **`docker image ls python-http-demo`** to get the Image ID of the image we created earlier in task 6
- 2. Next execute the command: **`docker tag  <IMAGE ID> python-http-demo:1.0`**
+1. Execute the command: **`docker image ls python-http-demo`** to get the Image ID of the image we created earlier in task 6
+2. Next execute the command: **`docker tag  <IMAGE ID> python-http-demo:1.0`**
 
 ## Pushing to a Repo
-**This is the first task requiring the Google Cloud Trial Account being activated** If you do not wish to activate the trial, you can sign up for and use Docker Hub.
- 1. As we will be using Google's Container Registry (GCR) we need to enable the docker helper. 
- 2. In the Cloud Shell, execute the command: **`gcloud auth configure-docker`** and you will see something like
-```
-The following settings will be added to your Docker config
-filelocated at [/home/anderton_james/.docker/config.json]:
-{credHelpers": { "gcr.io": "gcloud", "us.gcr.io": "gcloud", 
-eu.gcr.io": "gcloud", "asia.gcr.io": "gcloud", "staging-k8s.gcr.io": 
-gcloud", "marketplace.gcr.io": "gcloud" }}Do you want to continue 
-Y/n)? y
-Docker configuration file updated.
-```
- 3. If you are going to push the image to Docker Hub or a private repo,
-    you will first need to **`docker login`**
+3. As we will be using Azure's Container Registry (ACR) we need to set it up and login
+4. Execute the command **`az group create --name containers101 --location centralus`** and you can verify it with **`az group show <firstName.LastName.acr>`**
+![az group show](https://github.com/Burwood/containers101/raw/azure/containers_lab/images/Azure_cli_group_show_posh.png)
+
+5. Next execute the command **`az acr create --resource-group containers101 --name <firstNameLastNameACR> --sku Basic`**
+![az acr create](https://github.com/Burwood/containers101/raw/azure/containers_lab/images/Azure_cli_acr_create_posh.png)
+
+6. Now, execute the following command to build, tag, and upload our image to your ACR **`az acr build --registry <firstNameLastNameACR> --image python-http-demo:v2 .`**
+![az acr build](https://github.com/Burwood/containers101/raw/azure/containers_lab/images/Azure_cli_build_posh.png)
+
+
+7. **If you are going to push the image to Docker Hub or another private repo,
+    you will first need to **`docker login`** **
     
- 4. Next, you will need to create an additional tag to your local image:
- **`docker tag <IMAGE ID> gcr.io/<PROJECT_ID>/python-http-demo:1.0`** where PROJECT_ID is your Google project id (containers101)
+  8. Then, you would need to create an additional tag to your local image:
+ **`docker tag <IMAGE ID> localrepo.io/<username>/python-http-demo:1.0`**
  
- 5. Last, you will push the image via the command: **`docker push gcr.io/<PROJECT_ID>/python-http-demo:1.0`**
+  9. Last, you would push the image via the command: **`docker push localrepo.io/<username>/python-http-demo:1.0`**
 
 [Continue to the Next Task](https://github.com/Burwood/containers101/blob/azure/containers_lab/azure/task_11.md)
