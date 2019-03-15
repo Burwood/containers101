@@ -22,12 +22,11 @@ Lets try it out
 ![az acr build](https://github.com/Burwood/containers101/raw/azure/containers_lab/images/Azure_cli_acr_build_posh.png)
 
 
- 7. ###If you are going to push the image to Docker Hub or another private repo,
-    you will first need to **`docker login`**###
-    
+ 7. 
+ ###If you are going to push the image to Docker Hub or another private repo,
+    you will first need to **`docker login`**  
   8. Then, you would need to create an additional tag to your local image:
  **`docker tag <IMAGE ID> localrepo.io/<username>/python-http-demo:1.0`**
- 
   9. Last, you would push the image via the command: **`docker push localrepo.io/<username>/python-http-demo:1.0`**
 
 [Continue to the Next Task](https://github.com/Burwood/containers101/blob/azure/containers_lab/azure/task_11.md)
