@@ -3,10 +3,11 @@ Developing locally with containers is handy in many ways but it can quickly eat 
 
 So let's clean up the mess we made:
 
- 1. First execute the command: **`docker container prune`**
- 2. Next run: **`docker image prune`**
+ 1. First list run **`docker ps`** to make sure nothing is running and if there are any, stop them
+ 2. Next execute the command: **`docker container prune`**
+ 3. Then run: **`docker image prune`**
  4. Lastly, run **`docker image prune -a`** and note the difference...
- 4. Now run: **`docker volume prune`**
+ 5. Now run: **`docker volume prune`**
 
 
 [Return to the Index](https://github.com/Burwood/containers101/blob/azure/containers_lab/azure/README.md)
