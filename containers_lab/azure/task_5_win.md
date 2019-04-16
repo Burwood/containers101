@@ -9,7 +9,7 @@ After you've created your Dockerfile, you need to compile the image.
 ![Docker image ls](https://github.com/Burwood/containers101/blob/azure/containers_lab/images/Azure_vscode_dotnet_dockerbuild_posh.png)
  3. When it's done, you can execute the command **`docker images`** and see the newly created image. (Note its size!)
 
-![Docker image ls](https://github.com/Burwood/containers101/blob/azure/containers_lab/images/Azure_dotnet_docker_image_ls_posh.png
+![Docker image ls](https://github.com/Burwood/containers101/blob/azure/containers_lab/images/Azure_dotnet_docker_image_ls_posh.png)
 
 **It pays to know the source of your container images and often times you'll end up making your own due to size or package constraints.**
 
