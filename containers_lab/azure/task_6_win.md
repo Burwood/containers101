@@ -4,13 +4,14 @@ After creating the container image we need to create an instance and run it.
 1. Execute the command: **`docker-machine url $machineName`** and take note of the ip address
 ![Verify App](https://github.com/Burwood/containers101/raw/azure/containers_lab/images/Azure_docker-machine_url_posh.png)
 
-2. Next, execute the command: **`az vm open-port --resource-group docker-machine --name $machineName --port 8080`**
+2. Next, execute the command: **`az vm open-port --resource-group docker-machine --name $machineName --port 8080 --priority 901`**
 ![Verify App](https://github.com/Burwood/containers101/raw/azure/containers_lab/images/Azure_open_port_posh.png)
 
 3. Now execute the command: 
  **`docker run -it --name dotnet-demo -p 8080:80 dotnet-demo:v1`**
  
-    This starts up an interactive session instance of the dotnet-demo:v1 instance named dotnet-demo, and publishes the exposed internal port 80 to the host's port 8080
+    This starts up an interactive session instance (the -it flag) named dotnet-demo (the --name flag), and publishes the exposed internal port 80 to the host's port 8080 (the -p flag), of the dotnet-demo:v1 image. 
+**I chose 8080 so you could see how to setup an app on a nonstandard port for slightly less conspicuous debugging or multi-hosting**
     
 4. In your browser, use the IP Address from step 1 to verify the app is running and you see our sample .NET Core App ![Verify App](https://github.com/Burwood/containers101/raw/azure/containers_lab/images/Azure_dotnet_docker_run.png)
 
