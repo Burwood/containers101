@@ -12,4 +12,5 @@ Pay special attention the fields **Parent**, **ENV**, **Cmd**,  among other thin
 ![Docker inspect](https://github.com/Burwood/containers101/blob/azure/containers_lab/images/Azure_docker_image_inspect_posh.png)
 
 
-[Continue to the Next Task](https://github.com/Burwood/containers101/blob/azure/containers_lab/azure/task_4.md)
+[Continue to the Next Task using .NET Core](https://github.com/Burwood/containers101/blob/azure/containers_lab/azure/task_4_win.md)
+[Continue to the Next Task using Python](https://github.com/Burwood/containers101/blob/azure/containers_lab/azure/task_4.md)

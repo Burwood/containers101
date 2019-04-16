@@ -19,7 +19,7 @@ Lets try it out
 ![az acr create](https://github.com/Burwood/containers101/raw/azure/containers_lab/images/Azure_cli_acr_create_posh.png)
 
  6. Now, execute the following command to build, tag, and upload our image to your ACR **`az acr build --registry <firstNameLastNameACR> --image dotnet-demo:v1 .`**
-![az acr build](https://github.com/Burwood/containers101/raw/azure/containers_lab/images/Azure_cli_acr_build_posh.png)
+![az acr build](https://github.com/Burwood/containers101/raw/azure/containers_lab/images/Azure_cli_dotnet_acr_build_posh.png)
 
  - - - -
 
