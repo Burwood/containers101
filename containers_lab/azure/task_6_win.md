@@ -23,4 +23,4 @@ _If you are developing locally, open your browser to <http://localhost:8080>_
 7. Clean up your instance of this docker image with the command: 
  **`docker rm dotnet-demo`** so that we can reuse that name again later
 
-[Continue to the Next Task](https://github.com/Burwood/containers101/blob/azure/containers_lab/azure/task_7.md)
+[Continue to the Next Task](https://github.com/Burwood/containers101/blob/azure/containers_lab/azure/task_7_win.md)
