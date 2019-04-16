@@ -7,7 +7,7 @@ local storage was required. Out of this need volume mounts were created.
 Let’s use an off the shelf Cloud Storage application and attach a volume
 to it.
 
-1. First lets open a port for our new app. Execute the command: **`az vm open-port --resource-group docker-machine --name $machineName --port 9000`**
+1. First lets open a port for our new app. Execute the command: **`az vm open-port --resource-group docker-machine --name $machineName --port 9000 --priority 902`**
 1. Now, run the following commands:   **`docker pull minio/minio; docker
     run -it -p 9000:9000 minio/minio server /data`**
 2. Open your browser to `http://<IP_ADDRESS>:9000` and enter the AccessKey
