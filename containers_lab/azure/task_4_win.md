@@ -3,7 +3,7 @@
 
 The **Dockerfile** is what the docker engine requires to build new images and is essentially written in a do this, then that recipe style. Let's build a sample app!
 
- 1. Clone the repo:  **`https://github.com/cwilhit/SampleASPContainerApp.git`**
+ 1. Clone the repo:  **`https://github.com/cwilhit/SampleASPContainerApp.git`** and change to the new directory **~/SampleASPContainerApp**
  2. In the newly created directory, create a file named **Dockerfile** with the below contents. (you can issue the command **`code Dockerfile`** to open it in VS Code) and add the below contents:
 
 ``` 
