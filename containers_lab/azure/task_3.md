@@ -13,4 +13,5 @@ Pay special attention the fields **Parent**, **ENV**, **Cmd**,  among other thin
 
 
 [Continue to the Next Task using .NET Core](https://github.com/Burwood/containers101/blob/azure/containers_lab/azure/task_4_win.md)
+
 [Continue to the Next Task using Python](https://github.com/Burwood/containers101/blob/azure/containers_lab/azure/task_4.md)
