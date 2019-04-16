@@ -7,8 +7,8 @@ Assuming you're tagging a local image you would use the format: `docker tag <IMA
 
 Lets try it out
 
- 1. Execute the command: **`docker image ls python-http-demo`** to get the Image ID of the image we created earlier in task 6
- 2. Next execute the command: **`docker tag  <IMAGE ID> python-http-demo:1.0`**
+ 1. Execute the command: **`docker image ls dotnet-demo`** to get the Image ID of the image we created earlier in task 6
+ 2. Next execute the command: **`docker tag  <IMAGE ID> dotnet-demo:v1`**
 
 ## Pushing to a Repo
  3. As we will be using Azure's Container Registry (ACR) we need to set it up and login
