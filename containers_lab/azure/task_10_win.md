@@ -12,7 +12,7 @@ Lets try it out
 
 ## Pushing to a Repo
  3. As we will be using Azure's Container Registry (ACR) we need to set it up and login
- 4. First create a Resource Group using the command **`az group create --name containers101 --location centralus`** and you can verify it with **`az group show containers101`**
+ 4. First create a Resource Group using the command **`az group create --name containers101 --location centralus`** and you can verify it with **`az group show --name containers101`**
 ![az group show](https://github.com/Burwood/containers101/raw/azure/containers_lab/images/Azure_cli_group_show_posh.png)
 
  5. Next create a container registry with the command **`az acr create --resource-group containers101 --name <firstNameLastNameACR> --sku Basic`** **the name has to be dns unique**
