@@ -1,9 +1,9 @@
 ## **Kubernetes Lab Agenda**
 
  1. [Connecting to a GKE Cluster (Google)](https://github.com/Burwood/containers101/blob/master/kubernetes_lab/task_1.md) | [Connecting to a AKS Cluster (Azure)](https://github.com/Burwood/containers101/blob/master/kubernetes_lab/task_1_win.md)
- 2. [Learning your tools (Google)](https://github.com/Burwood/containers101/blob/master/kubernetes_lab/task_2.md)
+ 2. [Learning your tools](https://github.com/Burwood/containers101/blob/master/kubernetes_lab/task_2.md)
  3. [Deploy and manage a pod (Google)](https://github.com/Burwood/containers101/blob/master/kubernetes_lab/task_3.md)
-  4. [Deploy an application via a Deployment (Google)](https://github.com/Burwood/containers101/blob/master/kubernetes_lab/task_4.md)
+ 4. [Deploy an application via a Deployment (Google)](https://github.com/Burwood/containers101/blob/master/kubernetes_lab/task_4.md)
  5. [Creating and using labels, selectors and annotations  (Google)](https://github.com/Burwood/containers101/blob/master/kubernetes_lab/task_5.md)
  6. [Expose a Deployment via a Service (Google)](https://github.com/Burwood/containers101/blob/master/kubernetes_lab/task_6.md)
  7. [Create an Ingress (Google)](https://github.com/Burwood/containers101/blob/master/kubernetes_lab/task_7.md)
