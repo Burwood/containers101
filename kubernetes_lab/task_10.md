@@ -22,8 +22,7 @@ Now let's insert some data.
 7.  Next, run the command **`db.mytable.find()`** to print out all records![enter image description here](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/images/kubectl_mongo_find.png)   
 *for those that wondered, I have two items because I didnt snap the screenshot the first time.*
 
-8. Now run the command **`kubectl -n sample-app run --rm=true -it --pod-running-timeout=1m0s mongo-python-demo --image
-=janderton/mongo-python-demo --restart=Never`** to kick off a run once job using a docker image I created with a simple python script to query our database from a **separate** pod to prove we can contact the database across the internal cluster network. [(click here for the source code)](https://github.com/janderton/python-mongo-demo.git)![enter image description here](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/images/kubectl_run_once_mongo-demo-pod.png)
+8. Now run the command **`kubectl -n sample-app run --rm=true -it --pod-running-timeout=1m0s mongo-python-demo --image=janderton/mongo-python-demo --restart=Never`** to kick off a run once job using a docker image I created with a simple python script to query our database from a **separate** pod to prove we can contact the database across the internal cluster network. [(click here for the source code)](https://github.com/janderton/python-mongo-demo.git)![enter image description here](https://github.com/Burwood/containers101/raw/master/kubernetes_lab/images/kubectl_run_once_mongo-demo-pod.png)
 
 9.  Now, use **`kubectl -n sample-app delete statefulset mongo`** to delete your mongo deployment
 
