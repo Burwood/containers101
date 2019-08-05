@@ -1,4 +1,4 @@
-## Build a docker base image
+## Multi-Stage Docker Images
 A common scenario in the container world is to have a containerized web server and have its content copied into the container at build time or compiling a Go Binary to run in a container. Doing this with standard base images works, but leaves fat containers and security vulnerabilities behind... A much cleaner way to achieve this second scenario is to use a base image and multi-stage builds to compile the binary but then only copy the resulting binary into a container by itself leaving all the build tools behind for saftey and security.
 
  1. First, lets start by cloning a demo Http Server app written in Go. [go-http-demo](https://github.com/janderton/golang-http-demo.git)
