@@ -1,4 +1,4 @@
-## Create a Dockerfile for Windows **SEE AZURE BRANCH FOR UPDATED WINDOWS CONTENT**
+## Create a Dockerfile for Windows - **SEE AZURE BRANCH FOR UPDATED WINDOWS CONTENT**
 
 The **Dockerfile** is what the docker engine requires to build new images and is essentially written in a do this, then that recipe style. Let's publish a sample app with Visual Studio!
 
