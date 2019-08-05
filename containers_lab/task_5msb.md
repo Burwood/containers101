@@ -2,7 +2,7 @@
 A common scenario in the container world is to have a containerized web server and have its content copied into the container at build time or compiling a Go Binary to run in a container. Doing this with standard base images works, but leaves fat containers and security vulnerabilities behind... A much cleaner way to achieve this second scenario is to use a base image and multi-stage builds to compile the binary but then only copy the resulting binary into a container by itself leaving all the build tools behind for saftey and security.
 
  1. First, lets start by cloning a demo Http Server app written in Go. [go-http-demo](https://github.com/janderton/golang-http-demo.git)
- 1. Now, Create your **Dockerfile** as below:
+ 1. Now, Create your **Dockerfile** as below also changing where $USER@USER.com is your email address:
 ```
 # Monolithic Build
 FROM golang:alpine
@@ -18,8 +18,7 @@ RUN go get github.com/codegangsta/negroni && \
 
 ADD . .
 
-### go-sqlite3 requires CGO_ENABLED=1 and static linked mode to work in the scratch container
-RUN cd src && CGO_ENABLED=1 GOOS=linux go build -a -ldflags '-linkmode external -extldflags "-static"' -o goapp .
+RUN cd src && CGO_ENABLED=0 GOOS=linux go build -o goapp .
 
 ENV PORT 8080
 EXPOSE 8080
@@ -34,7 +33,7 @@ ENTRYPOINT ["/app/goapp"]
 
  1. Go ahead and Kill/Stop your container now.
 
- 1. Finally, back and edit your **Dockerfile**, change it to match below:
+ 1. Finally, go back and edit your **Dockerfile**, change it to match below:
 
 ```
 FROM golang:alpine as builder
