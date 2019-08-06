@@ -17,4 +17,4 @@ _If you are developing locally, open your browser to <http://localhost:8080>_
  5. Clean up your instance of this docker image with the command: 
  **`docker rm python-demo`** so that we can reuse that name again later
 
-[Continue to the Next Task](https://github.com/Burwood/containers101/blob/master/containers_lab/task_7.md)
+[Continue to the Next Task](https://github.com/Burwood/containers101/blob/master/containers_lab/task_6msb.md)
