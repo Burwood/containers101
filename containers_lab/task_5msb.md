@@ -3,8 +3,8 @@ A common scenario in the container world is to have a containerized web server a
 
  1. First, lets start by cloning a demo Http Server app written in Go. [go-http-demo](https://github.com/janderton/golang-http-demo.git)
  2. Now, Create your **Dockerfile** as below also changing where $USER@USER.com is your email address:
+
 ```
-# Monolithic Build
 FROM golang:alpine
 LABEL maintainer=" $USER <$USER@$USER.com>"
 LABEL description="Demo GoLang App"
@@ -16,18 +16,23 @@ RUN go get github.com/codegangsta/negroni && \
     go get github.com/mattn/go-sqlite3 && \
     go get github.com/yosssi/ace
 
-ADD . .
+#ADD . .
+ADD src/dev.db /app/dev.db
+ADD templates /app/templates/
+ADD src/main.go /app/main.go
 
-RUN cd src && CGO_ENABLED=0 GOOS=linux go build -o goapp .
+RUN CGO_ENABLED=1 GOOS=linux go build -a -o goapp .
 
 ENV PORT 8080
 EXPOSE 8080
 
-ADD /src/goapp /app/
-
 ENTRYPOINT ["/app/goapp"]
 ```
- 3. Next build your container and tag it **go-http-demo:v1** and **run it remembering to publish the container port 8080 to 8080 on your localhost**
+
+This Dockerfile is using the Golang community provided Alpine Linux Image as its base **(FROM golang:alpine)**, then setting the current working directory to **/app**. Next, it is running apk and installing the necessary dev tooling packages that we'll need to build a golang app, followed by running the **go get** package manager to get the modules we'll need to build our app. Then it adds all of the files from the current host directory into the working directory on the container. Lastly, we'll run the **go build** command, expose our ports, and setup our entrypoint so that only our go binary runs.
+
+
+ 3. Now, using the commands from previous tasks, build your container and tag it **go-http-demo:v1** and **run it remembering to publish the container port 8080 to 8080 on your localhost**
 
  4. Click the **Web Preview Button** in the cloud shell or if you are running this locally, open the browser to [your new app](http://localhost:8080)
 
@@ -69,7 +74,10 @@ EXPOSE 8080
 ENTRYPOINT ["/app/goapp"]
 
 ```
- 7. Run the same build command, **but tag this one go-http-demo:v2**,  and then run `docker image ls` again and note the difference in size. You have nothing in your container but the binary and its sqlite3 database file!
+
+This Dockerfile is coming to the same conclusion but from a totally different and more secure angle. We are starting off with the same **FROM** but labelling it as **builder** so that we can reference its results later. Then, we'll setup the build environment the same as before, but now when we **RUN** the **go build** command we added some flags so that we are staticly linking and including all the dependencies in the resulting binary because our next line we're using a second **FROM** pointing to **scratch** which quite literally means an empty container, then setting the working directory and adding just the files we need from our local pc into the directory as well as copying the compiled go binary from **builder** our labelled image from before and of course exposing the ports and setting our entrypoint.
+
+ 7. Now, run the same build command again, **but tag this one go-http-demo:v2**,  and then run `docker image ls` again and note the difference in size. You have nothing in your container but the binary and its sqlite3 database file!
 
 **What does this mean? Multi-stage builds are awesome and you should almost always use them**
 
