@@ -35,7 +35,7 @@ to it.
       - **`docker run -it -p 9000:9000 --name minio1 -v minio-data:/data -v
         minio-config:/root/.minio minio/minio server /data`**
     
-7. Open your browser again to <http://localhost:9000> and enter the
+7. Press the Web Preview button or Open your browser again to <http://localhost:9000> and enter the
     AccessKey and SecretKey provided from the command line when you
     launched the container
     
