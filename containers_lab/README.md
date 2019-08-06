@@ -7,9 +7,9 @@
  4. Create a Dockerfile [ [Linux](https://github.com/Burwood/containers101/blob/master/containers_lab/task_4.md) | Windows ]
  5. [Build a docker image](https://github.com/Burwood/containers101/blob/master/containers_lab/task_5.md)
 
- 5b. [Build a Multi-Stage docker image](https://github.com/Burwood/containers101/blob/master/containers_lab/task_5msb.md)
- 
  6. [Run a docker container with the new image](https://github.com/Burwood/containers101/blob/master/containers_lab/task_6.md)
+ 
+ 6b. [Build a Multi-Stage docker image](https://github.com/Burwood/containers101/blob/master/containers_lab/task_6msb.md)
  
  7. [How do I leave a container running?](https://github.com/Burwood/containers101/blob/master/containers_lab/task_7.md)
  
