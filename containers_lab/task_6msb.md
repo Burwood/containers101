@@ -1,7 +1,7 @@
 ## Multi-Stage Docker Images
 A common scenario in the container world is to have a containerized web server and have its content copied into the container at build time or compiling a Go Binary to run in a container. Doing this with standard base images works, but leaves fat containers and security vulnerabilities behind... A much cleaner way to achieve this second scenario is to use a base image and multi-stage builds to compile the binary but then only copy the resulting binary into a container by itself leaving all the build tools behind for saftey and security.
 
- 1. First, lets start by cloning a demo Http Server app written in Go. [go-http-demo](https://github.com/janderton/golang-http-demo.git)
+ 1. First, lets start by cloning a demo Http Server app written in Go. [https://github.com/janderton/golang-http-demo](https://github.com/janderton/golang-http-demo.git)
  2. Now, Create your **Dockerfile** as below also changing where $USER@USER.com is your email address:
 
 ```
@@ -16,7 +16,6 @@ RUN go get github.com/codegangsta/negroni && \
     go get github.com/mattn/go-sqlite3 && \
     go get github.com/yosssi/ace
 
-#ADD . .
 ADD src/dev.db /app/dev.db
 ADD templates /app/templates/
 ADD src/main.go /app/main.go
