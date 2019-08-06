@@ -80,5 +80,5 @@ This Dockerfile is coming to the same conclusion but from a totally different an
 
 **What does this mean? Multi-stage builds are awesome and you should almost always use them**
 
-[Continue to the Next Task](https://github.com/Burwood/containers101/blob/master/containers_lab/task_6.md)
+[Continue to the Next Task](https://github.com/Burwood/containers101/blob/master/containers_lab/task_7.md)
 
