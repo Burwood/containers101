@@ -1,10 +1,15 @@
-##Automating Container Builds with Google CloudBuild
+## Automating Container Builds with Google CloudBuild
 
 Mental context switching is one of the quickest ways to kill a programmer's productivity. Remembering how to build Docker Images can sometimes be just enough of a context switch to take the programmer out of "the zone", so let's automate the builds and keep them to their comfort zone of just committing code to a Git Repo!
 
- 1. First, we need to open **Google Cloud Build** in the GCP Console
+ 1. First, we need to open **Google Cloud Build** in the [GCP Console](https://console.cloud.google.com/cloud-build/builds)
+
+![enter image description here](https://github.com/Burwood/containers101/raw/master/containers_lab/images/GCP_CloudBuild.png)
 
  2. Next, we need to create a new **Trigger**
+
+![enter image description here](https://github.com/Burwood/containers101/raw/master/containers_lab/images/GCP_CloudBuild_Create_Trigger.png)
+![enter image description here](https://github.com/Burwood/containers101/raw/master/containers_lab/images/GCP_CloudBuild_Create_Trigger_Docker_Options.png)
 
 You can choose from one of two types... a simple "Dockerfile" build where upon receiving a webhook from github/bitbucket it goes and reads the Dockerfile it finds in the given repo and builds an image from it, and tags it with a single specific tag, then pushes it to a repo. You can only use one tag this way and only do this one thing, but for building base images, it's often enough. Let's try it:
 
@@ -40,7 +45,7 @@ images: [
 ```
 
 You can see it's a yaml file and the steps are marked by:
- * **-name:** <name of the builder image to use>
+ * **-name:** ```<name of the builder image to use>```
  * The args to pass it
  * An identifier for logging and control
  * A timeout value
