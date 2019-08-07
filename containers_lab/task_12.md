@@ -27,13 +27,25 @@ Now that we have a Google Source Code Repository, we're all ready to setup the *
 
 ![enter image description here](https://github.com/Burwood/containers101/raw/master/containers_lab/images/GCP_CloudBuild_Create_Trigger.png)
 ![enter image description here](https://github.com/Burwood/containers101/raw/master/containers_lab/images/GCP_CloudBuild_Create_Trigger_GCSR.png)
+
+Choose the defaults provided
+
 ![enter image description here](https://github.com/Burwood/containers101/raw/master/containers_lab/images/GCP_CloudBuild_Create_Trigger_GCSR_Docker_Options.png)
+
+ 3. Click on the "Run Trigger" link on the right
 ![enter image description here](https://github.com/Burwood/containers101/raw/master/containers_lab/images/GCP_CloudBuild_Finished_Trigger.png)
 
-You can choose from one of two types... a simple "Dockerfile" build where upon receiving a webhook from github/bitbucket it goes and reads the Dockerfile it finds in the given repo and builds an image from it, and tags it with a single specific tag, then pushes it to a repo. You can only use one tag this way and only do this one thing, but for building base images, it's often enough. Let's try it:
+ 4. Now Click on **History** link to the left to follow what it is doing
+![enter image description here](https://github.com/Burwood/containers101/raw/master/containers_lab/images/GCP_CloudBuild_History.png)
+
+ 5. Go to the **Google Container Repository** [GCR.IO](https://console.cloud.google.com/gcr/images/) and check out your new container
 
 
- 3. Now, let's say you want to tag an image with a specific build number for versioning, but you also want to have a **latest** tag for nightly images. Let's use the **cloudbuild file** option to try that. In the github repo we've already used for our go-http-demo app I've prepared a cloudbuild.yaml file for you that you can see below:
+You can choose from one of two types... a simple "Dockerfile" build where upon receiving a webhook from github/bitbucket it goes and reads the Dockerfile it finds in the given repo and builds an image from it, and tags it with a single specific tag, then pushes it to a repo. You can only use one tag this way and only do this one thing, but for building base images, it's often enough. 
+
+**Now, let's say you want to tag an image with a specific build number for versioning**, but you also want to have a **latest** tag for nightly images.
+
+ 6. Let's use the **cloudbuild file** option to try that. In the github repo we've already used for our go-http-demo app I've prepared a cloudbuild.yaml file for you that you can see below:
 
 ```
 steps:
