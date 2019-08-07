@@ -28,7 +28,7 @@ Now that we have a Google Source Code Repository, we're all ready to setup the *
 ![enter image description here](https://github.com/Burwood/containers101/raw/master/containers_lab/images/GCP_CloudBuild_Create_Trigger.png)
 ![enter image description here](https://github.com/Burwood/containers101/raw/master/containers_lab/images/GCP_CloudBuild_Create_Trigger_GCSR.png)
 
-Choose the defaults provided
+Choose the defaults provided except for the **Dockerfile Name**... use **Dockerfile.monolithic**
 
 ![enter image description here](https://github.com/Burwood/containers101/raw/master/containers_lab/images/GCP_CloudBuild_Create_Trigger_GCSR_Docker_Options.png)
 
