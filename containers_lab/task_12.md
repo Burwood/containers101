@@ -73,6 +73,8 @@ And lastly, the images being produced.
 
  4. Go ahead and create a **New Trigger** and choose **Cloudbuild File** this time instead... Then Click the **Run Trigger** link next to it and follow along on the History page from the menu on the left.
 
+![enter image description here](https://github.com/Burwood/containers101/raw/master/containers_lab/images/GCP_CloudBuild_Finished_Trigger.png)
+
 ![enter image description here](https://github.com/Burwood/containers101/raw/master/containers_lab/images/GCP_CloudBuild_History.png)
 
  5. Go to the **Google Container Repository** [GCR.IO](https://console.cloud.google.com/gcr/images/) and check out your new containers!
