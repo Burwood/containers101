@@ -2,7 +2,7 @@
 
 Mental context switching is one of the quickest ways to kill a programmer's productivity. Remembering how to build Docker Images can sometimes be just enough of a context switch to take the programmer out of "the zone", so let's automate the builds and keep them to their comfort zone of just committing code to a Git Repo!
 
- 1. Let's clone the [go-http-demo repo](https://github.com/janderton/golang-http-demo.git) if you havent already
+ 1. Let's clone the [go-http-demo repo](https://github.com/janderton/golang-http-demo.git) into your cloud shell or local environment if you havent already
  
  2. Now, let's create a [**Google Cloud Source Repository**](https://source.cloud.google.com/)
 
