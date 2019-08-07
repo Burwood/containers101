@@ -2,6 +2,23 @@
 
 Mental context switching is one of the quickest ways to kill a programmer's productivity. Remembering how to build Docker Images can sometimes be just enough of a context switch to take the programmer out of "the zone", so let's automate the builds and keep them to their comfort zone of just committing code to a Git Repo!
 
+ 1. Let's clone the [go-http-demo repo](https://github.com/janderton/golang-http-demo.git) if you havent already
+ 
+ 2. Now, let's create a [**Google Cloud Source Repository**](https://source.cloud.google.com/)
+
+![enter image description here](https://github.com/Burwood/containers101/raw/master/containers_lab/images/GCSR_Add_Repo.png)
+
+Choose Create a New Repo
+![enter image description here](https://github.com/Burwood/containers101/raw/master/containers_lab/images/GCSR_Create_New_Repo.png)
+
+Give the repo the name golang-http-demo
+![enter image description here](https://github.com/Burwood/containers101/raw/master/containers_lab/images/GCSR_New_Repo_Name.png)
+
+Now take note on how to push the code from our previously cloned repo into the new repo
+![enter image description here](https://github.com/Burwood/containers101/raw/master/containers_lab/images/GCSR_Push_Local_Code.png)
+
+Now that we have a Google Source Code Repository, we're all ready to setup the **Triggers** to receive the webhooks when a new commit is made to the repo.
+
  1. First, we need to open **Google Cloud Build** in the [GCP Console](https://console.cloud.google.com/cloud-build/builds)
 
 ![enter image description here](https://github.com/Burwood/containers101/raw/master/containers_lab/images/GCP_CloudBuild.png)
@@ -23,6 +40,7 @@ steps:
   args: [
     'build',
     '-t', "gcr.io/$PROJECT_ID/go-http-demo:$SHORT_SHA",
+    '-t', "gcr.io/$PROJECT_ID/go-http-demo:latest",
     '--file', "Dockerfile.monolithic",
     '.']
   id: 'build_monolithic'
