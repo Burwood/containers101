@@ -27,7 +27,7 @@ Now that we have a Google Source Code Repository, we're all ready to setup the *
 
 ![enter image description here](https://github.com/Burwood/containers101/raw/master/containers_lab/images/GCP_CloudBuild_Create_Trigger.png)
 ![enter image description here](https://github.com/Burwood/containers101/raw/master/containers_lab/images/GCP_CloudBuild_Create_Trigger_GCSR.png)
-![enter image description here](https://github.com/Burwood/containers101/raw/master/containers_lab/images/GCP_CloudBuild_Create_Trigger_Docker_Options.png)
+![enter image description here](https://github.com/Burwood/containers101/raw/master/containers_lab/images/GCP_CloudBuild_Create_Trigger_GCSR_Docker_Options.png)
 
 You can choose from one of two types... a simple "Dockerfile" build where upon receiving a webhook from github/bitbucket it goes and reads the Dockerfile it finds in the given repo and builds an image from it, and tags it with a single specific tag, then pushes it to a repo. You can only use one tag this way and only do this one thing, but for building base images, it's often enough. Let's try it:
 
