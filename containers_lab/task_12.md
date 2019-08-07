@@ -28,6 +28,7 @@ Now that we have a Google Source Code Repository, we're all ready to setup the *
 ![enter image description here](https://github.com/Burwood/containers101/raw/master/containers_lab/images/GCP_CloudBuild_Create_Trigger.png)
 ![enter image description here](https://github.com/Burwood/containers101/raw/master/containers_lab/images/GCP_CloudBuild_Create_Trigger_GCSR.png)
 ![enter image description here](https://github.com/Burwood/containers101/raw/master/containers_lab/images/GCP_CloudBuild_Create_Trigger_GCSR_Docker_Options.png)
+![enter image description here](https://github.com/Burwood/containers101/raw/master/containers_lab/images/GCP_CloudBuild_Finished_Trigger.png)
 
 You can choose from one of two types... a simple "Dockerfile" build where upon receiving a webhook from github/bitbucket it goes and reads the Dockerfile it finds in the given repo and builds an image from it, and tags it with a single specific tag, then pushes it to a repo. You can only use one tag this way and only do this one thing, but for building base images, it's often enough. Let's try it:
 
@@ -70,6 +71,13 @@ You can see it's a yaml file and the steps are marked by:
  * A timeout value
 And lastly, the images being produced.
 
+ 4. Go ahead and create a **New Trigger** and choose **Cloudbuild File** this time instead... Then Click the **Run Trigger** link next to it and follow along on the History page from the menu on the left.
+
+![enter image description here](https://github.com/Burwood/containers101/raw/master/containers_lab/images/GCP_CloudBuild_History.png)
+
+ 5. Go to the **Google Container Repository** [GCR.IO](https://console.cloud.google.com/gcr/images/) and check out your new containers!
+
+![enter image description here](https://github.com/Burwood/containers101/raw/master/containers_lab/images/GCP_CloudBuild_Result.png)
 
 [Return to the Index](https://github.com/Burwood/containers101/blob/master/containers_lab/README.md)
 
