@@ -9,4 +9,4 @@ So let's clean up the mess we made:
  4. Now run: **`docker volume prune`**
 
 
-[Return to the Index](https://github.com/Burwood/containers101/blob/master/containers_lab/README.md)
+[Continue to the Next Task](https://github.com/Burwood/containers101/blob/master/containers_lab/task_12.md)
