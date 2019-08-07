@@ -10,7 +10,7 @@ to it.
 
  1. Run the following commands:   **`docker pull minio/minio`   `docker
     run -it -p 9000:9000 minio/minio server /data`**
-2. Open your browser to <http://localhost:9000> and enter the AccessKey
+2. Press the **Web Preview** button and choose **Change Port** to set your port to **9000** and then launch the preview, or if you are developing locally, open your browser to <http://localhost:9000> and enter the AccessKey
     and SecretKey provided from the commandline when you launched the
     container
 3. Press the **Red +** button at the bottom right corner and then press
@@ -35,7 +35,7 @@ to it.
       - **`docker run -it -p 9000:9000 --name minio1 -v minio-data:/data -v
         minio-config:/root/.minio minio/minio server /data`**
     
-7. Open your browser again to <http://localhost:9000> and enter the
+7. Press the Web Preview button or Open your browser again to <http://localhost:9000> and enter the
     AccessKey and SecretKey provided from the command line when you
     launched the container
     
