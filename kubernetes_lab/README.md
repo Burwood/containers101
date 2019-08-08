@@ -14,6 +14,7 @@
  12. [Using a Service Account with your application](https://github.com/Burwood/containers101/blob/master/kubernetes_lab/task_12.md)
  13. [Create a viewing-only RBAC role and bind it to a user](https://github.com/Burwood/containers101/blob/master/kubernetes_lab/task_13.md)
  14. [View workloads from the GKE Dashboard](https://github.com/Burwood/containers101/blob/master/kubernetes_lab/task_14.md)
+ 15. [Automating Kubernetes Deployments with Google Cloud Build](https://github.com/Burwood/containers101/blob/master/kubernetes_lab/task_15.md)
  
 
 [Return to Lab Home](https://github.com/Burwood/containers101/blob/master/README.md)
